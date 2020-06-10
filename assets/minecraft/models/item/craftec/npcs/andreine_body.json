@@ -1,0 +1,6 @@
+{
+    "parent": "item/craftec/player/steve/body",
+    "textures": {
+        "0": "entity/craftec/npcs/andreine"
+    }
+}

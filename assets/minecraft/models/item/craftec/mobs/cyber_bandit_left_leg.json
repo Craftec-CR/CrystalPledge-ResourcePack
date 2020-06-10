@@ -1,0 +1,6 @@
+{
+    "parent": "item/craftec/player/steve/left_leg",
+    "textures": {
+        "0": "entity/craftec/cyber_bandit"
+    }
+}

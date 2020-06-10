@@ -1,0 +1,6 @@
+{
+    "parent": "item/craftec/player/alex/body",
+    "textures": {
+        "0": "entity/craftec/players/sentropic"
+    }
+}

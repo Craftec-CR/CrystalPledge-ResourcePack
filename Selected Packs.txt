@@ -1,0 +1,28 @@
+Vanilla Tweaks Resource Pack
+Version: 1.14
+Packs:
+	CircularSunandMoon
+	BetterBedrock
+	PingColorIndicator
+	BlackNetherBricks
+	UnobtrusiveRain
+	LowerFire
+	BorderlessGlass
+	BorderlessStainedGlass
+	LowerShield
+	GrassSides
+	MyceliumSides
+	PodzolSides
+	SnowSides
+	PathSides
+	NumberedHotbar
+	ConnectedPolishedStones
+	ConnectedBookshelves
+	QuieterFire
+	3DDoors&Trapdoors
+	3DLadders
+	3DRails
+	3DIronBars
+	3DLilyPads
+	3DVines
+	3DSugarcane

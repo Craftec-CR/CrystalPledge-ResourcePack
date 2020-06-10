@@ -1,0 +1,7 @@
+{
+    "parent": "block/craftec/neon_vertical",
+    "textures": {
+        "all": "block/craftec/lilac_neon",
+        "border": "block/craftec/lilac_neon_border"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/brick"
+    },
+	"overrides": [
+		{"predicate":{"custom_model_data":1},"model": "item/craftec/gui/solarian_phone"},
+		{"predicate":{"custom_model_data":2},"model": "item/craftec/warrior_headset"},
+		{"predicate":{"custom_model_data":3},"model": "item/craftec/shielder_headset"},
+		{"predicate":{"custom_model_data":4},"model": "item/craftec/blade_dancer_headset"}
+	]
+}

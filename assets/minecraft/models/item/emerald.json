@@ -1,0 +1,20 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/emerald"
+    },
+    "overrides": [
+        {"predicate":{"custom_model_data":1},"model":"item/craftec/players/sentropic_head"},
+        {"predicate":{"custom_model_data":2},"model":"item/craftec/players/sentropic_left_arm"},
+        {"predicate":{"custom_model_data":3},"model":"item/craftec/players/sentropic_right_arm"},
+        {"predicate":{"custom_model_data":4},"model":"item/craftec/players/sentropic_body"},
+        {"predicate":{"custom_model_data":5},"model":"item/craftec/players/sentropic_left_leg"},
+        {"predicate":{"custom_model_data":6},"model":"item/craftec/players/sentropic_right_leg"},
+        {"predicate":{"custom_model_data":7},"model":"item/craftec/npcs/andreine_head"},
+        {"predicate":{"custom_model_data":8},"model":"item/craftec/npcs/andreine_left_arm"},
+        {"predicate":{"custom_model_data":9},"model":"item/craftec/npcs/andreine_right_arm"},
+        {"predicate":{"custom_model_data":10},"model":"item/craftec/npcs/andreine_body"},
+        {"predicate":{"custom_model_data":11},"model":"item/craftec/npcs/andreine_left_leg"},
+        {"predicate":{"custom_model_data":12},"model":"item/craftec/npcs/andreine_right_leg"}
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/cod"
+    },
+    "display": {
+        "head": {
+            "rotation": [ 0, 90, -60 ],
+            "translation": [ -7, -4, -7],
+            "scale":[ 0.8, 0.8, 0.8]
+        }
+    },
+    "overrides": [
+        {"predicate":{"custom_model_data":1},"model":"item/craftec/empty"},
+        {"predicate":{"custom_model_data":2},"model":"item/craftec/crossed_swords"},
+        {"predicate":{"custom_model_data":3},"model":"item/craftec/mech_sword_"},
+        {"predicate":{"custom_model_data":4},"model":"item/craftec/cyber_sword_"},
+        {"predicate":{"custom_model_data":5},"model":"item/craftec/mech_sword__"},
+        {"predicate":{"custom_model_data":6},"model":"item/craftec/cyber_sword__"},
+        {"predicate":{"custom_model_data":7},"model":"item/craftec/colon"}
+    ]
+}

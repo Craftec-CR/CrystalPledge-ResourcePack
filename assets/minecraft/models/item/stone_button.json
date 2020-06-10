@@ -1,0 +1,7 @@
+{
+    "parent": "block/stone_button_inventory",    
+    "overrides": [
+        {"predicate":{"custom_model_data":11},"model":"item/craftec/clickable/left_arrow"},
+        {"predicate":{"custom_model_data":21},"model":"item/craftec/clickable/right_arrow"}
+    ]
+}

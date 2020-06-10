@@ -1,0 +1,11 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/stick"
+    },    
+    "overrides": [
+        {"predicate":{"custom_model_data":1},"model":"item/craftec/hobermanite"},
+        {"predicate":{"custom_model_data":2},"model":"item/craftec/copper_ingot"},
+        {"predicate":{"custom_model_data":3},"model":"item/craftec/steel_ingot"}
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/craftec/base_sword",
+	"textures": {
+		"0": "item/iron_sword"
+	}
+}

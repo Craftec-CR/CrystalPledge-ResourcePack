@@ -1,0 +1,6 @@
+{
+    "parent": "item/craftec/phone",
+	"textures": {
+		"1": "item/craftec/cyberus_phone"
+	}
+}

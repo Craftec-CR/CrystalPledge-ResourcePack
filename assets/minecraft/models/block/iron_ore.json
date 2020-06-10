@@ -1,0 +1,6 @@
+{
+    "parent": "block/craftec/metal_ore",
+    "textures": {
+        "metal": "block/lapisdemon/bonus/mushroomblocks/002"
+    }
+}

@@ -1,6 +1,6 @@
 {
-    "parent": "block/craftec/crystal_ore",
+    "parent": "block/craftec/metal_ore",
     "textures": {
-        "crystal": "block/craftec/lepidolite"
+        "metal": "block/lapisdemon/bonus/mushroomblocks/006"
     }
 }

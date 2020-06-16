@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"texture": "gui/craftec/solarian_phone"
+		"texture": "gui/craftec/soulpad"
 	},
 	"gui_light": "front",
 	"elements": [

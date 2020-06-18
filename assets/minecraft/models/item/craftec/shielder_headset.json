@@ -3,7 +3,6 @@
 	"parent": "item/craftec/headset",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "item/craftec/headset",
 		"2": "item/craftec/shielder_headset"
 	},
 	"elements": [
@@ -16,8 +15,8 @@
 				"east": {"uv": [0, 0, 2, 2], "texture": "#3"},
 				"south": {"uv": [10, 1, 11, 3], "texture": "#3"},
 				"west": {"uv": [0, 0, 2, 2], "texture": "#3"},
-				"up": {"uv": [9, 0, 11, 1], "texture": "#3"},
-				"down": {"uv": [9, 3, 11, 4], "texture": "#3"}
+				"up": {"uv": [9, 0, 11, 1], "rotation": 270, "texture": "#3"},
+				"down": {"uv": [9, 3, 11, 4], "rotation": 90, "texture": "#3"}
 			}
 		},
 		{
@@ -29,8 +28,8 @@
 				"east": {"uv": [0, 0, 2, 2], "texture": "#3"},
 				"south": {"uv": [8, 1, 9, 3], "texture": "#3"},
 				"west": {"uv": [0, 0, 2, 2], "texture": "#3"},
-				"up": {"uv": [7, 0, 9, 1], "texture": "#3"},
-				"down": {"uv": [7, 3, 9, 4], "texture": "#3"}
+				"up": {"uv": [7, 0, 9, 1], "rotation": 90, "texture": "#3"},
+				"down": {"uv": [7, 3, 9, 4], "rotation": 270, "texture": "#3"}
 			}
 		},
 		{

@@ -1588,6 +1588,13 @@
             "ascent": -26,
             "height": 9,
             "chars": ["\uE196"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:gui/craftec/ammo.png",
+            "ascent": -54,
+            "height": 6,
+            "chars": ["\uE197"]
         }
     ]
 }

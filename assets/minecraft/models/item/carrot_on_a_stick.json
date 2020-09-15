@@ -4,7 +4,6 @@
         "layer0": "item/carrot_on_a_stick"
     },
 	"overrides": [
-		{"predicate":{"custom_model_data":1},"model": "item/craftec/soulpad"},
-		{"predicate":{"custom_model_data":3},"model": "item/craftec/soxhlet_gun"}
+		{"predicate":{"custom_model_data":1},"model": "item/craftec/soulpad"}
 	]
 }

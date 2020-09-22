@@ -31,6 +31,6 @@
         {"predicate": {"pulling": 1,"pull": 1.0},"model": "item/crossbow_pulling_2"},
         {"predicate": {"charged": 1},"model": "item/crossbow_arrow"},
         {"predicate": {"charged": 1,"firework": 1},"model": "item/crossbow_firework"},
-		{"predicate":{"custom_model_data":2},"model": "item/craftec/soxhlet_gun"}
+		{"predicate":{"custom_model_data":1},"model": "item/craftec/soxhlet_gun"}
     ]
 }

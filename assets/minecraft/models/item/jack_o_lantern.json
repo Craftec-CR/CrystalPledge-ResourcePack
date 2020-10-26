@@ -1,0 +1,6 @@
+{
+    "parent": "block/jack_o_lantern",
+    "overrides": [
+        {"predicate":{"custom_model_data":1},"model":"item/craftec/skills/shield"}
+    ]
+}

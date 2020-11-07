@@ -6,6 +6,7 @@
 	"overrides": [
 		{"predicate":{"custom_model_data":1},"model": "item/craftec/soulpad"},
 		{"predicate":{"custom_model_data":2,"damage":0},"model": "item/craftec/soxhlet_gun"},
-		{"predicate":{"custom_model_data":2,"damage":0.5},"model": "item/craftec/soxhlet_gun_aiming"}
+		{"predicate":{"custom_model_data":2,"damage":0.5},"model": "item/craftec/soxhlet_gun_aiming"},
+		{"predicate":{"custom_model_data":3},"model": "item/craftec/scepter"}
 	]
 }

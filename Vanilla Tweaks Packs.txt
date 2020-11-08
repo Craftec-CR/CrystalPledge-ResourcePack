@@ -1,7 +1,6 @@
 Vanilla Tweaks Resource Pack
-Version: 1.14
+Version: 1.15
 Packs:
-	CircularSunandMoon
 	BetterBedrock
 	PingColorIndicator
 	BlackNetherBricks
@@ -9,13 +8,8 @@ Packs:
 	LowerFire
 	BorderlessGlass
 	BorderlessStainedGlass
-	LowerShield
 	GrassSides
-	MyceliumSides
-	PodzolSides
-	SnowSides
 	PathSides
-	NumberedHotbar
 	ConnectedPolishedStones
 	ConnectedBookshelves
 	QuieterFire
@@ -26,3 +20,4 @@ Packs:
 	3DLilyPads
 	3DVines
 	3DSugarcane
+	3D Sun & Moon

@@ -21,3 +21,22 @@ Packs:
 	3DVines
 	3DSugarcane
 	3DSunMoon
+	DarkerDarkOakLeaves
+	DifferentStems
+	GlassDoors
+	GlassTrapdoors
+	VariatedDirt
+	VariatedGrass
+	VariatedCobblestone
+	VariatedLogs
+	VariatedGravel
+	VariatedPlanks
+	VariatedStone
+	VariatedTerracotta
+	VariatedUnpolishedStones
+	VariatedBookshelves+ConnectedBookshelves
+	NoCaveSounds
+	Age25Kelp
+	VisualHoney
+	VisualSaplingGrowth
+	SlimesBlack

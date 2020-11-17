@@ -1,0 +1,6 @@
+{
+    "parent": "craftec:player/alex/left_leg",
+    "textures": {
+        "0": "craftec:player/sentropic"
+    }
+}

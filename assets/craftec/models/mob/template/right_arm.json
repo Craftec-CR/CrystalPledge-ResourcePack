@@ -1,0 +1,6 @@
+{
+    "parent": "craftec:player/steve/right_arm",
+    "textures": {
+        "0": "craftec:player/steve"
+    }
+}

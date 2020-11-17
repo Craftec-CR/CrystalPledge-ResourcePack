@@ -1,0 +1,6 @@
+{
+    "parent": "craftec:player/steve/right_leg",
+    "textures": {
+        "0": "craftec:npc/andreine"
+    }
+}

@@ -1,6 +1,0 @@
-{
-    "parent": "item/craftec/phone",
-	"textures": {
-		"1": "item/craftec/soulpad"
-	}
-}

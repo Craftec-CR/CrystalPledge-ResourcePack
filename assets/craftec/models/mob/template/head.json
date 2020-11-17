@@ -1,0 +1,6 @@
+{
+    "parent": "craftec:player/steve/head",
+    "textures": {
+        "0": "craftec:player/steve"
+    }
+}

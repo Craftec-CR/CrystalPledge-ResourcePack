@@ -4,9 +4,9 @@
         "layer0": "item/carrot_on_a_stick"
     },
 	"overrides": [
-		{"predicate":{"custom_model_data":1},"model": "item/craftec/soulpad"},
-		{"predicate":{"custom_model_data":2,"damage":0},"model": "item/craftec/soxhlet_gun"},
-		{"predicate":{"custom_model_data":2,"damage":0.5},"model": "item/craftec/soxhlet_gun_aiming"},
-		{"predicate":{"custom_model_data":3},"model": "item/craftec/scepter"}
+		{"predicate":{"custom_model_data":1},"model": "craftec:item/soulpad"},
+		{"predicate":{"custom_model_data":2,"damage":0},"model": "craftec:item/soxhlet_gun"},
+		{"predicate":{"custom_model_data":2,"damage":0.5},"model": "craftec:item/soxhlet_gun_aiming"},
+		{"predicate":{"custom_model_data":3},"model": "craftec:item/scepter"}
 	]
 }

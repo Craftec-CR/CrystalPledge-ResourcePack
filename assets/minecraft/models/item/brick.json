@@ -4,11 +4,11 @@
         "layer0": "item/brick"
     },
 	"overrides": [
-		{"predicate":{"custom_model_data":1},"model": "item/craftec/gui/soulpad"},
-		{"predicate":{"custom_model_data":2},"model": "item/craftec/warrior_headset"},
-		{"predicate":{"custom_model_data":3},"model": "item/craftec/shielder_headset"},
-		{"predicate":{"custom_model_data":4},"model": "item/craftec/blade_dancer_headset"},
-		{"predicate":{"custom_model_data":5},"model": "item/craftec/berserker_headset"},
-		{"predicate":{"custom_model_data":6},"model": "item/craftec/explorer_headset"}
+		{"predicate":{"custom_model_data":1},"model": "craftec:gui/soulpad"},
+		{"predicate":{"custom_model_data":2},"model": "craftec:item/warrior_headset"},
+		{"predicate":{"custom_model_data":3},"model": "craftec:item/shielder_headset"},
+		{"predicate":{"custom_model_data":4},"model": "craftec:item/blade_dancer_headset"},
+		{"predicate":{"custom_model_data":5},"model": "craftec:item/berserker_headset"},
+		{"predicate":{"custom_model_data":6},"model": "craftec:item/explorer_headset"}
 	]
 }

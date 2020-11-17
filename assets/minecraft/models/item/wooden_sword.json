@@ -4,7 +4,7 @@
         "layer0": "item/wooden_sword"
     },
     "overrides": [
-        {"predicate":{"custom_model_data":1},"model":"item/craftec/mech_sword"},
-        {"predicate":{"custom_model_data":2},"model":"item/craftec/cyber_sword"}
+        {"predicate":{"custom_model_data":1},"model":"craftec:item/mech_sword"},
+        {"predicate":{"custom_model_data":2},"model":"craftec:item/cyber_sword"}
     ]
 }

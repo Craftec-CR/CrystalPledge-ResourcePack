@@ -1,6 +1,0 @@
-{
-    "parent": "item/craftec/player/alex/right_arm",
-    "textures": {
-        "0": "entity/craftec/players/sentropic"
-    }
-}

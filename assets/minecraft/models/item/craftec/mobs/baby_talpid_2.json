@@ -1,9 +1,0 @@
-{
-	"parent": "item/craftec/mobs/talpid_2",
-	"display": {
-		"head": {
-			"translation": [0, -17, -3],
-			"scale": [2, 2, 2]
-		}
-	}
-}

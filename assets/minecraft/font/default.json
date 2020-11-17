@@ -2,1510 +2,878 @@
     "providers": [
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/widget.png",
+            "file": "craftec:gui/widget.png",
             "ascent": -15,
             "height": 50,
             "chars": ["\uE000"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_00.png",
+            "file": "craftec:gui/health_00.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE001"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_01.png",
+            "file": "craftec:gui/health_01.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE002"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_02.png",
+            "file": "craftec:gui/health_02.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE003"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_03.png",
+            "file": "craftec:gui/health_03.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE004"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_04.png",
+            "file": "craftec:gui/health_04.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE005"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_05.png",
+            "file": "craftec:gui/health_05.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE006"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_06.png",
+            "file": "craftec:gui/health_06.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE007"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_07.png",
+            "file": "craftec:gui/health_07.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE008"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_08.png",
+            "file": "craftec:gui/health_08.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE009"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_09.png",
+            "file": "craftec:gui/health_09.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE00A"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_10.png",
+            "file": "craftec:gui/health_10.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE00B"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_11.png",
+            "file": "craftec:gui/health_11.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE00C"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_12.png",
+            "file": "craftec:gui/health_12.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE00D"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_13.png",
+            "file": "craftec:gui/health_13.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE00E"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_14.png",
+            "file": "craftec:gui/health_14.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE00F"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_15.png",
+            "file": "craftec:gui/health_15.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE010"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_16.png",
+            "file": "craftec:gui/health_16.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE011"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_17.png",
+            "file": "craftec:gui/health_17.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE012"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_18.png",
+            "file": "craftec:gui/health_18.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE013"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_19.png",
+            "file": "craftec:gui/health_19.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE014"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_20.png",
+            "file": "craftec:gui/health_20.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE015"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_21.png",
+            "file": "craftec:gui/health_21.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE016"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_22.png",
+            "file": "craftec:gui/health_22.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE017"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_23.png",
+            "file": "craftec:gui/health_23.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE018"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_24.png",
+            "file": "craftec:gui/health_24.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE019"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_25.png",
+            "file": "craftec:gui/health_25.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE01A"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_26.png",
+            "file": "craftec:gui/health_26.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE01B"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_27.png",
+            "file": "craftec:gui/health_27.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE01C"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_28.png",
+            "file": "craftec:gui/health_28.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE01D"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_29.png",
+            "file": "craftec:gui/health_29.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE01E"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_30.png",
+            "file": "craftec:gui/health_30.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE01F"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_31.png",
+            "file": "craftec:gui/health_31.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE020"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_32.png",
+            "file": "craftec:gui/health_32.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE021"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_33.png",
+            "file": "craftec:gui/health_33.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE022"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_34.png",
+            "file": "craftec:gui/health_34.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE023"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_35.png",
+            "file": "craftec:gui/health_35.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE024"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_36.png",
+            "file": "craftec:gui/health_36.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE025"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_37.png",
+            "file": "craftec:gui/health_37.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE026"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_38.png",
+            "file": "craftec:gui/health_38.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE027"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_39.png",
+            "file": "craftec:gui/health_39.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE028"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_40.png",
+            "file": "craftec:gui/health_40.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE029"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_41.png",
+            "file": "craftec:gui/health_41.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE02A"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_42.png",
+            "file": "craftec:gui/health_42.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE02B"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_43.png",
+            "file": "craftec:gui/health_43.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE02C"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_44.png",
+            "file": "craftec:gui/health_44.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE02D"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_45.png",
+            "file": "craftec:gui/health_45.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE02E"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_46.png",
+            "file": "craftec:gui/health_46.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE02F"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_47.png",
+            "file": "craftec:gui/health_47.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE030"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_48.png",
+            "file": "craftec:gui/health_48.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE031"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_49.png",
+            "file": "craftec:gui/health_49.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE032"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_50.png",
+            "file": "craftec:gui/health_50.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE033"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_51.png",
+            "file": "craftec:gui/health_51.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE034"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_52.png",
+            "file": "craftec:gui/health_52.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE035"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_53.png",
+            "file": "craftec:gui/health_53.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE036"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_54.png",
+            "file": "craftec:gui/health_54.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE037"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_55.png",
+            "file": "craftec:gui/health_55.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE038"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_56.png",
+            "file": "craftec:gui/health_56.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE039"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_57.png",
+            "file": "craftec:gui/health_57.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE03A"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_58.png",
+            "file": "craftec:gui/health_58.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE03B"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_59.png",
+            "file": "craftec:gui/health_59.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE03C"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_60.png",
+            "file": "craftec:gui/health_60.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE03D"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_61.png",
+            "file": "craftec:gui/health_61.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE03E"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_62.png",
+            "file": "craftec:gui/health_62.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE03F"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_63.png",
+            "file": "craftec:gui/health_63.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE040"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_64.png",
+            "file": "craftec:gui/health_64.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE041"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_65.png",
+            "file": "craftec:gui/health_65.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE042"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_66.png",
+            "file": "craftec:gui/health_66.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE043"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_67.png",
+            "file": "craftec:gui/health_67.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE044"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_68.png",
+            "file": "craftec:gui/health_68.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE045"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_69.png",
+            "file": "craftec:gui/health_69.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE046"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_70.png",
+            "file": "craftec:gui/health_70.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE047"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_71.png",
+            "file": "craftec:gui/health_71.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE048"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_72.png",
+            "file": "craftec:gui/health_72.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE049"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_73.png",
+            "file": "craftec:gui/health_73.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE04A"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_74.png",
+            "file": "craftec:gui/health_74.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE04B"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_75.png",
+            "file": "craftec:gui/health_75.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE04C"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_76.png",
+            "file": "craftec:gui/health_76.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE04D"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_77.png",
+            "file": "craftec:gui/health_77.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE04E"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_78.png",
+            "file": "craftec:gui/health_78.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE04F"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_79.png",
+            "file": "craftec:gui/health_79.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE050"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/health_80.png",
+            "file": "craftec:gui/health_80.png",
             "ascent": -26,
             "height": 9,
             "chars": ["\uE051"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/ammo.png",
+            "file": "craftec:gui/ammo.png",
             "ascent": -44,
             "height": 6,
             "chars": ["\uE052"]
         },
-        {
-            "type": "ttf",
-            "file": "minecraft:ammo.ttf",
-            "shift": [0.0, 32.0],
-            "size": 8.0,
-            "oversample": 5.0
-        },
-        {
-            "type": "ttf",
-            "file": "minecraft:member.ttf",
-            "shift": [0.0, 13.75],
-            "size": 7.0,
-            "oversample": 2.0
-        },
+        
+        
         
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_00.png",
+            "file": "craftec:gui/team_health_00.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE16E"]
+            "chars": ["\uE0A0"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_01.png",
+            "file": "craftec:gui/team_health_01.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE16F"]
+            "chars": ["\uE0A1"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_02.png",
+            "file": "craftec:gui/team_health_02.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE170"]
+            "chars": ["\uE0A2"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_03.png",
+            "file": "craftec:gui/team_health_03.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE171"]
+            "chars": ["\uE0A3"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_04.png",
+            "file": "craftec:gui/team_health_04.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE172"]
+            "chars": ["\uE0A4"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_05.png",
+            "file": "craftec:gui/team_health_05.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE173"]
+            "chars": ["\uE0A5"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_06.png",
+            "file": "craftec:gui/team_health_06.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE174"]
+            "chars": ["\uE0A6"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_07.png",
+            "file": "craftec:gui/team_health_07.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE175"]
+            "chars": ["\uE0A7"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_08.png",
+            "file": "craftec:gui/team_health_08.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE176"]
+            "chars": ["\uE0A8"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_09.png",
+            "file": "craftec:gui/team_health_09.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE177"]
+            "chars": ["\uE0A9"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_10.png",
+            "file": "craftec:gui/team_health_10.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE178"]
+            "chars": ["\uE0AA"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_11.png",
+            "file": "craftec:gui/team_health_11.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE179"]
+            "chars": ["\uE0AB"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_12.png",
+            "file": "craftec:gui/team_health_12.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE17A"]
+            "chars": ["\uE0AC"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_13.png",
+            "file": "craftec:gui/team_health_13.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE17B"]
+            "chars": ["\uE0AD"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_14.png",
+            "file": "craftec:gui/team_health_14.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE17C"]
+            "chars": ["\uE0AE"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_15.png",
+            "file": "craftec:gui/team_health_15.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE17D"]
+            "chars": ["\uE0AF"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_16.png",
+            "file": "craftec:gui/team_health_16.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE17E"]
+            "chars": ["\uE1B0"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_17.png",
+            "file": "craftec:gui/team_health_17.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE17F"]
+            "chars": ["\uE1B1"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_18.png",
+            "file": "craftec:gui/team_health_18.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE180"]
+            "chars": ["\uE1B2"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_19.png",
+            "file": "craftec:gui/team_health_19.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE181"]
+            "chars": ["\uE1B3"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_20.png",
+            "file": "craftec:gui/team_health_20.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE182"]
+            "chars": ["\uE1B4"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_21.png",
+            "file": "craftec:gui/team_health_21.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE183"]
+            "chars": ["\uE1B5"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_22.png",
+            "file": "craftec:gui/team_health_22.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE184"]
+            "chars": ["\uE1B6"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_23.png",
+            "file": "craftec:gui/team_health_23.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE185"]
+            "chars": ["\uE1B7"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_24.png",
+            "file": "craftec:gui/team_health_24.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE186"]
+            "chars": ["\uE1B8"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_25.png",
+            "file": "craftec:gui/team_health_25.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE187"]
+            "chars": ["\uE1B9"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_26.png",
+            "file": "craftec:gui/team_health_26.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE188"]
+            "chars": ["\uE1BA"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_27.png",
+            "file": "craftec:gui/team_health_27.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE189"]
+            "chars": ["\uE1BB"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_28.png",
+            "file": "craftec:gui/team_health_28.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE18A"]
+            "chars": ["\uE1BC"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_29.png",
+            "file": "craftec:gui/team_health_29.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE18B"]
+            "chars": ["\uE1BD"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_30.png",
+            "file": "craftec:gui/team_health_30.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE18C"]
+            "chars": ["\uE1BE"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_31.png",
+            "file": "craftec:gui/team_health_31.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE18D"]
+            "chars": ["\uE1BF"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_32.png",
+            "file": "craftec:gui/team_health_32.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE18E"]
+            "chars": ["\uE1C0"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_33.png",
+            "file": "craftec:gui/team_health_33.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE18F"]
+            "chars": ["\uE1C1"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_34.png",
+            "file": "craftec:gui/team_health_34.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE190"]
+            "chars": ["\uE1C2"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_35.png",
+            "file": "craftec:gui/team_health_35.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE191"]
+            "chars": ["\uE1C3"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_36.png",
+            "file": "craftec:gui/team_health_36.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE192"]
+            "chars": ["\uE1C4"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_37.png",
+            "file": "craftec:gui/team_health_37.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE193"]
+            "chars": ["\uE1C5"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_38.png",
+            "file": "craftec:gui/team_health_38.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE194"]
+            "chars": ["\uE1C6"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_39.png",
+            "file": "craftec:gui/team_health_39.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE195"]
+            "chars": ["\uE1C7"]
         },
         {
             "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_40.png",
+            "file": "craftec:gui/team_health_40.png",
             "ascent": -24,
             "height": 2,
-            "chars": ["\uE196"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/1.png",
-            "ascent": -23,
-            "height": 4,
-            "chars": ["\uE130"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/2.png",
-            "ascent": -23,
-            "height": 4,
-            "chars": ["\uE131"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_00.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE141"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_01.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE140"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_02.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE13F"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_03.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE12F"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_04.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE12E"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_05.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE12D"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_06.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE12C"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_07.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE146"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_08.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE147"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_09.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE148"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_10.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE149"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_11.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE14A"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_12.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE14B"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_13.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE14C"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_14.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE14D"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_15.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE14E"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_16.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE14F"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_17.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE150"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_18.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE151"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_19.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE152"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_20.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE153"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_21.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE154"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_22.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE155"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_23.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE156"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_24.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE157"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_25.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE158"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_26.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE159"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_27.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE15A"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_28.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE15B"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_29.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE15C"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_30.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE15D"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_31.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE15E"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_32.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE15F"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_33.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE160"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_34.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE161"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_35.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE162"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_36.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE163"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_37.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE164"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_38.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE165"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_39.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE166"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_40.png",
-            "ascent": -34,
-            "height": 2,
-            "chars": ["\uE167"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/2.png",
-            "ascent": -33,
-            "height": 4,
-            "chars": ["\uE135"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/3.png",
-            "ascent": -33,
-            "height": 4,
-            "chars": ["\uE136"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_00.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE081"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_01.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE080"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_02.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE07F"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_03.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE07E"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_04.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE07D"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_05.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE07C"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_06.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE07B"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_07.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE07A"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_08.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE079"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_09.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE078"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_10.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE077"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_11.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE076"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_12.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE075"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_13.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE074"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_14.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE073"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_15.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE072"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_16.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE071"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_17.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE070"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_18.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE06F"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_19.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE06E"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_20.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE06D"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_21.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE06C"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_22.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE06B"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_23.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE06A"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_24.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE069"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_25.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE068"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_26.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE067"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_27.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE066"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_28.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE065"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_29.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE064"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_30.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE063"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_31.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE062"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_32.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE061"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_33.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE13E"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_34.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE13D"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_35.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE13C"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_36.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE197"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_37.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE145"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_38.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE144"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_39.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE143"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/team_health_40.png",
-            "ascent": -44,
-            "height": 2,
-            "chars": ["\uE142"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/3.png",
-            "ascent": -43,
-            "height": 4,
-            "chars": ["\uE13A"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/4.png",
-            "ascent": -43,
-            "height": 4,
-            "chars": ["\uE13B"]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:gui/craftec/anomalous.png",
-            "ascent": 8,
-            "height": 8,
-            "chars": ["\uE082"]
-        },
+            "chars": ["\uE1C8"]
+        },
+        
+        
+        
         {
             "type": "bitmap",
             "file": "space:font/space_split.png",

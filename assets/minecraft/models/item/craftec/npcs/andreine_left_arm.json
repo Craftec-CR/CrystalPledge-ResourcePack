@@ -1,6 +1,0 @@
-{
-    "parent": "item/craftec/player/steve/left_arm",
-    "textures": {
-        "0": "entity/craftec/npcs/andreine"
-    }
-}

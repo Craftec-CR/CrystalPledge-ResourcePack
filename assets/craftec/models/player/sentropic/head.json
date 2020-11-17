@@ -1,0 +1,6 @@
+{
+    "parent": "craftec:player/alex/head",
+    "textures": {
+        "0": "craftec:player/sentropic"
+    }
+}

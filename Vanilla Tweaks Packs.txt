@@ -1,8 +1,8 @@
 Vanilla Tweaks Resource Pack
-Version: 1.15
+Version: 1.16
 Packs:
 	BetterBedrock
-	PingColorIndicator
+        PingColorIndicator
 	BlackNetherBricks
 	UnobtrusiveRain
 	LowerFire
@@ -14,10 +14,10 @@ Packs:
 	ConnectedBookshelves
 	QuieterFire
 	3DDoors&Trapdoors
-	3DLadders
 	3DRails
+	3DLadders
 	3DIronBars
 	3DLilyPads
 	3DVines
 	3DSugarcane
-	3D Sun & Moon
+	3DSunMoon

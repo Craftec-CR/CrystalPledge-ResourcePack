@@ -36,7 +36,6 @@ Packs:
 	VariatedUnpolishedStones
 	VariatedBookshelves+ConnectedBookshelves
 	NoCaveSounds
-	Age25Kelp
 	VisualHoney
 	VisualSaplingGrowth
 	SlimesBlack

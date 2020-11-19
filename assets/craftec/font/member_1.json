@@ -1,0 +1,609 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/ascii.png",
+            "ascent": -18,
+            "height": 5,
+            "chars": [
+                "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                "\u0020\u0021\u0022\u0023\u0024\u0025\u0026\u0027\u0028\u0029\u002a\u002b\u002c\u002d\u002e\u002f",
+                "\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039\u003a\u003b\u003c\u003d\u003e\u003f",
+                "\u0040\u0041\u0042\u0043\u0044\u0045\u0046\u0047\u0048\u0049\u004a\u004b\u004c\u004d\u004e\u004f",
+                "\u0050\u0051\u0052\u0053\u0054\u0055\u0056\u0057\u0058\u0059\u005a\u005b\u005c\u005d\u005e\u005f",
+                "\u0060\u0061\u0062\u0063\u0064\u0065\u0066\u0067\u0068\u0069\u006a\u006b\u006c\u006d\u006e\u006f",
+                "\u0070\u0071\u0072\u0073\u0074\u0075\u0076\u0077\u0078\u0079\u007a\u007b\u007c\u007d\u007e\u0000",
+                "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00a3\u0000\u0000\u0192",
+                "\u0000\u0000\u0000\u0000\u0000\u0000\u00aa\u00ba\u0000\u0000\u00ac\u0000\u0000\u0000\u00ab\u00bb",
+                "\u2591\u2592\u2593\u2502\u2524\u2561\u2562\u2556\u2555\u2563\u2551\u2557\u255d\u255c\u255b\u2510",
+                "\u2514\u2534\u252c\u251c\u2500\u253c\u255e\u255f\u255a\u2554\u2569\u2566\u2560\u2550\u256c\u2567",
+                "\u2568\u2564\u2565\u2559\u2558\u2552\u2553\u256b\u256a\u2518\u250c\u2588\u2584\u258c\u2590\u2580",
+                "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u2205\u2208\u0000",
+                "\u2261\u00b1\u2265\u2264\u2320\u2321\u00f7\u2248\u00b0\u2219\u00b7\u221a\u207f\u00b2\u25a0\u0000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/widget.png",
+            "ascent": -15,
+            "height": 50,
+            "chars": ["\uE000"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_00.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE001"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_01.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE002"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_02.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE003"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_03.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE004"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_04.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE005"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_05.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE006"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_06.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE007"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_07.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE008"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_08.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE009"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_09.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE00A"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_10.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE00B"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_11.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE00C"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_12.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE00D"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_13.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE00E"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_14.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE00F"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_15.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE010"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_16.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE011"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_17.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE012"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_18.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE013"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_19.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE014"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_20.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE015"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_21.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE016"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_22.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE017"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_23.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE018"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_24.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE019"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_25.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE01A"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_26.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE01B"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_27.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE01C"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_28.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE01D"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_29.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE01E"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_30.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE01F"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_31.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE020"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_32.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE021"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_33.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE022"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_34.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE023"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_35.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE024"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_36.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE025"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_37.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE026"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_38.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE027"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_39.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE028"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_40.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE029"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_41.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE02A"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_42.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE02B"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_43.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE02C"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_44.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE02D"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_45.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE02E"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_46.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE02F"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_47.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE030"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_48.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE031"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_49.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE032"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_50.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE033"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_51.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE034"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_52.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE035"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_53.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE036"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_54.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE037"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_55.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE038"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_56.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE039"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_57.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE03A"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_58.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE03B"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_59.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE03C"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_60.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE03D"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_61.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE03E"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_62.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE03F"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_63.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE040"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_64.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE041"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_65.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE042"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_66.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE043"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_67.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE044"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_68.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE045"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_69.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE046"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_70.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE047"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_71.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE048"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_72.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE049"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_73.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE04A"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_74.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE04B"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_75.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE04C"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_76.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE04D"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_77.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE04E"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_78.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE04F"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_79.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE050"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/health_80.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE051"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/ammo.png",
+            "ascent": -44,
+            "height": 6,
+            "chars": ["\uE052"]
+        }
+    ]
+}

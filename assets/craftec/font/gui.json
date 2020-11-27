@@ -72,6 +72,20 @@
             "ascent": -44,
             "height": 6,
             "chars": ["\uE052"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/shield.png",
+            "ascent": -39,
+            "height": 12,
+            "chars": ["\uE080"]
+        },
+        {
+            "type": "bitmap",
+            "file": "craftec:gui/broken_shield.png",
+            "ascent": -39,
+            "height": 12,
+            "chars": ["\uE081"]
         }
     ]
 }

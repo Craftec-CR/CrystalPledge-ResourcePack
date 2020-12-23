@@ -1,0 +1,8 @@
+*.git
+*.gitignore
+build.bat
+buildexclude.txt
+Craftec.zip
+*.cubik
+*.bbmodel
+*Vanilla Tweaks.zip

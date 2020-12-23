@@ -1,6 +1,7 @@
 {
     "parent": "block/jack_o_lantern",
     "overrides": [
-        {"predicate":{"custom_model_data":1},"model":"craftec:skill/shield"}
+        {"predicate":{"custom_model_data":1},"model":"craftec:skill/shield"},
+        {"predicate":{"custom_model_data":2},"model":"craftec:skill/crater"}
     ]
 }

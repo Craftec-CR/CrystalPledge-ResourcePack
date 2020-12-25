@@ -1,10 +1,14 @@
 @echo off
-del "Craftec.zip"
-"C:\Program Files\7-Zip\7z" x "VanillaTweaks.zip" -o"%cd%\temp" -r -aoa
-ren "%cd%\temp\Selected Packs.txt" "Vanilla Tweaks.txt"
-"C:\Program Files\7-Zip\7z" a "%cd%\Craftec.zip" "%cd%\temp\*"
-rmdir "%cd%\temp\" /Q/S
-"C:\Program Files\7-Zip\7z" a "%cd%\Craftec.zip" "%cd%\*" -xr@buildexclude.txt
+set "repPath=%cd%"
+cd ..
+set "rpPath=%cd%"
+cd %repPath%
+rmdir "%rpPath%\Craftec\" /Q/S
+"C:\Program Files\7-Zip\7z" x "VanillaTweaks.zip" -o"%rpPath%\Craftec" -r -aoa
+ren "%rpPath%\Craftec\Selected Packs.txt" "Vanilla Tweaks.txt"
+Xcopy "%repPath%" "%rpPath%\Craftec" /S/Y/Q /EXCLUDE:buildexclude.txt
+del "%repPath%\Craftec.zip"
+"C:\Program Files\7-Zip\7z" a "%repPath%\Craftec.zip" "%rpPath%\Craftec\*"
 echo.
 echo [92mSuccesfully built resource pack![0m
 pause

@@ -1,11 +1,13 @@
 {
-"music.creative": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
-"music.credits": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
-"music.dragon": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
-"music.end": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
-"music.game": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
-"music.nether": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
-"music.under_water": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
-"macarena": {"subtitle": "La Macarena - Los del Río","category": "player","sounds": [{"name": "craftec:macarena","stream": true}]},
-"pose": {"subtitle": "Pose épica","category": "player","sounds": [{"name": "craftec:pose"}]}
+    "music.creative": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
+    "music.credits": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
+    "music.dragon": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
+    "music.end": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
+    "music.game": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
+    "music.nether": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
+    "music.under_water": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
+    "music.under_water": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
+    "entity.slime.death": {"replace": "true","sounds": [{"name": "craftec:empty"}]},
+    "macarena": {"subtitle": "La Macarena - Los del Río","category": "player","sounds": [{"name": "craftec:macarena","stream": true}]},
+    "pose": {"subtitle": "Pose épica","category": "player","sounds": [{"name": "craftec:pose"}]}
 }

@@ -128,8 +128,8 @@
 	],
 	"display": {
 		"head": {
-			"translation": [0, -8.9, -3],
-			"scale": [3, 3, 3]
+			"translation": [0, -40, -3],
+			"scale": [2, 2, 2]
 		}
 	}
 }

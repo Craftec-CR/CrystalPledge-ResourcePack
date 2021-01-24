@@ -27,9 +27,6 @@
         {"predicate":{"custom_model_data":21},"model":"craftec:mob/mech_bandit/right_leg"},
         {"predicate":{"custom_model_data":22},"model":"craftec:mob/talpid/0"},
         {"predicate":{"custom_model_data":23},"model":"craftec:mob/talpid/1"},
-        {"predicate":{"custom_model_data":24},"model":"craftec:mob/talpid/2"},
-        {"predicate":{"custom_model_data":25},"model":"craftec:mob/talpid/baby/0"},
-        {"predicate":{"custom_model_data":26},"model":"craftec:mob/talpid/baby/1"},
-        {"predicate":{"custom_model_data":27},"model":"craftec:mob/talpid/baby/2"}
+        {"predicate":{"custom_model_data":24},"model":"craftec:mob/talpid/2"}
     ]
 }

@@ -676,5 +676,8 @@
     "space.-256": "\uF80D%s",
     "space.-512": "\uF80E%s",
     "space.-1024": "\uF80F%s",
-    "space.-max": "\uF800%s"
+    "space.-max": "\uF800%s",
+    #Subtitles
+    "subtitles.mob.cardophyte.hurt": "Cardófito herido",
+    "subtitles.mob.cardophyte.death": "Cardófito muerto"
 }

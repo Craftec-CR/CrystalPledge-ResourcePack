@@ -11,4 +11,3 @@ del "%repPath%\Craftec.zip"
 "C:\Program Files\7-Zip\7z" a "%repPath%\Craftec.zip" "%rpPath%\Craftec\*"
 echo.
 echo [92mSuccesfully built resource pack![0m
-pause

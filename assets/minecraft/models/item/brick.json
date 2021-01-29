@@ -9,6 +9,7 @@
 		{"predicate":{"custom_model_data":3},"model": "craftec:item/shielder_headset"},
 		{"predicate":{"custom_model_data":4},"model": "craftec:item/blade_dancer_headset"},
 		{"predicate":{"custom_model_data":5},"model": "craftec:item/berserker_headset"},
-		{"predicate":{"custom_model_data":6},"model": "craftec:item/explorer_headset"}
+		{"predicate":{"custom_model_data":6},"model": "craftec:item/explorer_headset"},
+		{"predicate":{"custom_model_data":7},"model": "craftec:gui/map/solarian_map"}
 	]
 }

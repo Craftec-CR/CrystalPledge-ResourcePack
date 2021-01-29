@@ -5,4 +5,5 @@
 \Craftec.zip\
 .cubik\
 .bbmodel\
+.xcf\
 \VanillaTweaks.zip\

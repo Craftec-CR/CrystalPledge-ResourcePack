@@ -2,6 +2,13 @@
     "parent": "block/stone_button_inventory",    
     "overrides": [
         {"predicate":{"custom_model_data":1},"model":"craftec:gui/left_arrow"},
-        {"predicate":{"custom_model_data":2},"model":"craftec:gui/right_arrow"}
+        {"predicate":{"custom_model_data":2},"model":"craftec:gui/right_arrow"},
+        {"predicate":{"custom_model_data":3},"model":"craftec:gui/close"},
+        {"predicate":{"custom_model_data":4},"model":"craftec:gui/map/hq"},
+        {"predicate":{"custom_model_data":5},"model":"craftec:gui/map/anvil"},
+        {"predicate":{"custom_model_data":6},"model":"craftec:gui/map/solarian_door"},
+        {"predicate":{"custom_model_data":7},"model":"craftec:gui/map/talpid_nest"},
+        {"predicate":{"custom_model_data":8},"model":"craftec:gui/map/sewerage"},
+        {"predicate":{"custom_model_data":9},"model":"craftec:gui/map/emp_cave"}
     ]
 }

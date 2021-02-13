@@ -15,7 +15,7 @@
 	],
 	"display": {
 		"gui": {
-			"translation":  [ 78, -70, 0 ],
+			"translation":  [ 79, -71, 0 ],
 			"scale":  [ 4, 4, 1 ]
 		}
 	},

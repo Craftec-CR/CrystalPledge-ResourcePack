@@ -15,6 +15,12 @@
         {"predicate":{"custom_model_data":9},"model":"craftec:npc/andreine/right_arm"},
         {"predicate":{"custom_model_data":10},"model":"craftec:npc/andreine/body"},
         {"predicate":{"custom_model_data":11},"model":"craftec:npc/andreine/left_leg"},
-        {"predicate":{"custom_model_data":12},"model":"craftec:npc/andreine/right_leg"}
+        {"predicate":{"custom_model_data":12},"model":"craftec:npc/andreine/right_leg"},
+        {"predicate":{"custom_model_data":13},"model":"craftec:npc/sofya/head"},
+        {"predicate":{"custom_model_data":14},"model":"craftec:npc/sofya/right_arm"},
+        {"predicate":{"custom_model_data":15},"model":"craftec:npc/sofya/left_arm"},
+        {"predicate":{"custom_model_data":16},"model":"craftec:npc/sofya/body"},
+        {"predicate":{"custom_model_data":17},"model":"craftec:npc/sofya/right_leg"},
+        {"predicate":{"custom_model_data":18},"model":"craftec:npc/sofya/left_leg"}
     ]
 }

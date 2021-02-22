@@ -1,6 +1,0 @@
-{
-    "parent": "craftec:player/steve/left_leg",
-    "textures": {
-        "0": "craftec:player/steve"
-    }
-}

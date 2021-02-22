@@ -4,12 +4,12 @@
         "layer0": "item/diamond"
     },
     "overrides": [
-        {"predicate":{"custom_model_data":1},"model":"craftec:mob/template/head"},
-        {"predicate":{"custom_model_data":2},"model":"craftec:mob/template/left_arm"},
-        {"predicate":{"custom_model_data":3},"model":"craftec:mob/template/right_arm"},
-        {"predicate":{"custom_model_data":4},"model":"craftec:mob/template/body"},
-        {"predicate":{"custom_model_data":5},"model":"craftec:mob/template/left_leg"},
-        {"predicate":{"custom_model_data":6},"model":"craftec:mob/template/right_leg"},
+        {"predicate":{"custom_model_data":1},"model":"craftec:player/steve/head"},
+        {"predicate":{"custom_model_data":2},"model":"craftec:player/steve/left_arm"},
+        {"predicate":{"custom_model_data":3},"model":"craftec:player/steve/right_arm"},
+        {"predicate":{"custom_model_data":4},"model":"craftec:player/steve/body"},
+        {"predicate":{"custom_model_data":5},"model":"craftec:player/steve/left_leg"},
+        {"predicate":{"custom_model_data":6},"model":"craftec:player/steve/right_leg"},
         {"predicate":{"custom_model_data":7},"model":"craftec:mob/rat/0"},
         {"predicate":{"custom_model_data":8},"model":"craftec:mob/rat/1"},
         {"predicate":{"custom_model_data":9},"model":"craftec:mob/rat/2"},

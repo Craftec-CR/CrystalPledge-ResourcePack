@@ -1,5 +1,5 @@
 {
-    "parent": "craftec:player/alex/right_leg",
+    "parent": "craftec:mob/alex/right_leg",
     "textures": {
         "0": "craftec:player/sentropic"
     }

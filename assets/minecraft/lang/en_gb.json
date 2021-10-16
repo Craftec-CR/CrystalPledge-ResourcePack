@@ -95,5 +95,12 @@
     "enchantment.minecraft.binding_curse": "§r§7Implanted",
     #Subtitles
     "subtitles.mob.cardophyte.hurt": "Cardophyte hurts",
-    "subtitles.mob.cardophyte.death": "Cardophyte dies"
+    "subtitles.mob.cardophyte.death": "Cardophyte dies",
+    #GUI
+    "jigsaw_block.pool": "Target Pool:",
+    "jigsaw_block.name": "Attachment Type:",
+    "jigsaw_block.target": "Ignored",
+    "jigsaw_block.levels": "Ignored",
+    "jigsaw_block.keep_jigsaws": "Ignored",
+    "jigsaw_block.generate": "Ignored"
 }

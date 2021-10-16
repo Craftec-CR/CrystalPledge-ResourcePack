@@ -95,5 +95,12 @@
     "enchantment.minecraft.binding_curse": "§r§7Implantado",
     #Subtitles
     "subtitles.mob.cardophyte.hurt": "Cardófito herido",
-    "subtitles.mob.cardophyte.death": "Cardófito muerto"
+    "subtitles.mob.cardophyte.death": "Cardófito muerto",
+    #GUI
+    "jigsaw_block.pool": "Target Pool:",
+    "jigsaw_block.name": "Attachment Type:",
+    "jigsaw_block.target": "Ignored",
+    "jigsaw_block.levels": "Ignored",
+    "jigsaw_block.keep_jigsaws": "Ignored",
+    "jigsaw_block.generate": "Ignored"
 }

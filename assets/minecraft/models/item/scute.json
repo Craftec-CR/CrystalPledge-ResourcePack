@@ -4,6 +4,6 @@
     "layer0": "minecraft:item/scute"
   },
     "overrides": [
-        {"predicate":{"custom_model_data":1},"model":"craftec:item/warrior_sword"}
+        {"predicate":{"custom_model_data":1},"model":"crystalpledge:item/warrior_sword"}
     ]
 }

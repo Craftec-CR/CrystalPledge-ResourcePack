@@ -1,0 +1,57 @@
+{
+  "taunt.macarena": {
+    "sounds": [
+      {
+        "name": "crystalpledge:macarena",
+        "stream": true
+      }
+    ],
+    "subtitle": "La Macarena - Los del Río"
+  },
+  "taunt.dab": {
+    "sounds": [
+      "crystalpledge:pose"
+    ],
+    "subtitle": "Dab"
+  },
+  "entity.cardophyte.hurt": {
+    "sounds": [
+      {
+        "name": "random/eat1",
+        "volume": 2,
+        "pitch": 0.7
+      },
+      {
+        "name": "random/eat2",
+        "volume": 2,
+        "pitch": 0.7
+      },
+      {
+        "name": "random/eat3",
+        "volume": 2,
+        "pitch": 0.7
+      }
+    ],
+    "subtitle": "subtitles.mob.cardophyte.hurt"
+  },
+  "entity.cardophyte.death": {
+    "sounds": [
+      {
+        "name": "random/eat1",
+        "volume": 2,
+        "pitch": 0.6
+      },
+      {
+        "name": "random/eat2",
+        "volume": 2,
+        "pitch": 0.6
+      },
+      {
+        "name": "random/eat3",
+        "volume": 2,
+        "pitch": 0.6
+      }
+    ],
+    "subtitle": "subtitles.mob.cardophyte.death"
+  }
+}

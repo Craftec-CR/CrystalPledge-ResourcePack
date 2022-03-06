@@ -1,0 +1,6 @@
+{
+    "parent": "crystalpledge:item/blocking_sword",
+	"textures": {
+		"0": "item/iron_sword"
+	}
+}

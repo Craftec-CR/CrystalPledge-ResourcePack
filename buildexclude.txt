@@ -2,7 +2,7 @@
 \.gitignore\
 \build.bat\
 \buildexclude.txt\
-\Craftec.zip\
+\CrystalPledge.zip\
 .cubik\
 .bbmodel\
 .xcf\

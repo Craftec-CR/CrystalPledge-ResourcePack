@@ -1,0 +1,26 @@
+{
+	"credit": "Made with Blockbench",
+    "description": "A 7.5 block wide, 2.5 block tall shield",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "crystalpledge:skill/shield"
+	},
+	"elements": [
+		{
+			"from": [-16, 0, 8],
+			"to": [32, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 24, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 12, 3.5], "texture": "#0"},
+				"south": {"uv": [0, 0, 12, 3.5], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -6.4, 0],
+			"scale": [4, 4, 4]
+		}
+	}
+}

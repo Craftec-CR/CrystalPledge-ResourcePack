@@ -1,6 +1,0 @@
-{
-    "parent": "craftec:mob/baby_alex/body",
-    "textures": {
-        "0": "craftec:npc/sofya"
-    }
-}

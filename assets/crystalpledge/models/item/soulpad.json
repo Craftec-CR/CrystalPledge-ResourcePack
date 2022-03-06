@@ -1,0 +1,6 @@
+{
+    "parent": "crystalpledge:item/phone",
+	"textures": {
+		"1": "crystalpledge:item/soulpad"
+	}
+}

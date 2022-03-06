@@ -1,6 +1,6 @@
 {
-    "parent": "craftec:block/crystal_ore",
+    "parent": "crystalpledge:block/crystal_ore",
     "textures": {
-        "crystal": "craftec:block/bauxite"
+        "crystal": "crystalpledge:block/bauxite"
     }
 }

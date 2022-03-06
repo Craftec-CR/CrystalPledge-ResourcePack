@@ -1,0 +1,6 @@
+{
+    "parent": "crystalpledge:mob/steve/right_arm",
+    "textures": {
+        "0": "crystalpledge:mob/cyber_bandit"
+    }
+}

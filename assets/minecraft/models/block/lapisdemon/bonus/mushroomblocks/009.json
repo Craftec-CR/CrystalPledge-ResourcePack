@@ -1,7 +1,7 @@
 {
-    "parent": "craftec:block/neon_vertical",
+    "parent": "crystalpledge:block/neon_vertical",
     "textures": {
-        "all": "craftec:block/lilac_neon",
-        "border": "craftec:block/lilac_neon_border"
+        "all": "crystalpledge:block/lilac_neon",
+        "border": "crystalpledge:block/lilac_neon_border"
     }
 }

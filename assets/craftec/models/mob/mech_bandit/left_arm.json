@@ -1,6 +1,0 @@
-{
-    "parent": "craftec:mob/steve/left_arm",
-    "textures": {
-        "0": "craftec:mob/mech_bandit"
-    }
-}

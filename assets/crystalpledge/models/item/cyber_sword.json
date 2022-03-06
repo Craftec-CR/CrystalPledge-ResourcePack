@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "crystalpledge:item/cyber_sword"
+    }
+}

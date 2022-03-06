@@ -128,7 +128,7 @@
     },
     "overrides": [
         {"predicate":{"blocking": 1},"model": "item/shield_blocking"},
-        {"predicate":{"custom_model_data":1,"blocking": 0},"model":"craftec:item/warrior_sword"},
-        {"predicate":{"custom_model_data":1,"blocking": 1},"model":"craftec:item/warrior_sword_b"}
+        {"predicate":{"custom_model_data":1,"blocking": 0},"model":"crystalpledge:item/warrior_sword"},
+        {"predicate":{"custom_model_data":1,"blocking": 1},"model":"crystalpledge:item/warrior_sword_b"}
     ]
 }

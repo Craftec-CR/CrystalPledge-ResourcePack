@@ -1,0 +1,6 @@
+{
+    "parent": "crystalpledge:mob/steve/head",
+    "textures": {
+        "0": "crystalpledge:npc/andreine"
+    }
+}

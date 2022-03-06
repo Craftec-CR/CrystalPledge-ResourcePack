@@ -2,49 +2,49 @@
   "music.creative": {
     "replace": "true",
     "sounds": [
-      "craftec:empty"
+      "crystalpledge:empty"
     ]
   },
   "music.credits": {
     "replace": "true",
     "sounds": [
-      "craftec:empty"
+      "crystalpledge:empty"
     ]
   },
   "music.dragon": {
     "replace": "true",
     "sounds": [
-      "craftec:empty"
+      "crystalpledge:empty"
     ]
   },
   "music.end": {
     "replace": "true",
     "sounds": [
-      "craftec:empty"
+      "crystalpledge:empty"
     ]
   },
   "music.game": {
     "replace": "true",
     "sounds": [
-      "craftec:empty"
+      "crystalpledge:empty"
     ]
   },
   "music.nether": {
     "replace": "true",
     "sounds": [
-      "craftec:empty"
+      "crystalpledge:empty"
     ]
   },
   "music.under_water": {
     "replace": "true",
     "sounds": [
-      "craftec:empty"
+      "crystalpledge:empty"
     ]
   },
   "entity.slime.death": {
     "replace": "true",
     "sounds": [
-      "craftec:empty"
+      "crystalpledge:empty"
     ]
   }
 }

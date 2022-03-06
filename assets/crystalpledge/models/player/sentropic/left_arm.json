@@ -1,0 +1,6 @@
+{
+    "parent": "crystalpledge:mob/alex/left_arm",
+    "textures": {
+        "0": "crystalpledge:player/sentropic"
+    }
+}

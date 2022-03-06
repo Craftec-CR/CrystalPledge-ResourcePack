@@ -4,16 +4,16 @@
         "layer0": "item/gold_ingot"
     },    
     "overrides": [
-        {"predicate":{"custom_model_data":1},"model":"craftec:item/bronze_ingot"},
-        {"predicate":{"custom_model_data":2},"model":"craftec:item/emp_crystal"},
-        {"predicate":{"custom_model_data":3},"model":"craftec:item/oil"},
-        {"predicate":{"custom_model_data":4},"model":"craftec:item/bakelite_pellets"},
-        {"predicate":{"custom_model_data":5},"model":"craftec:item/bauxite"},
-        {"predicate":{"custom_model_data":6},"model":"craftec:item/aluminum_ingot"},
-        {"predicate":{"custom_model_data":7},"model":"craftec:item/casiterite"},
-        {"predicate":{"custom_model_data":8},"model":"craftec:item/tin_ingot"},
-        {"predicate":{"custom_model_data":9},"model":"craftec:item/hobermanite"},
-        {"predicate":{"custom_model_data":10},"model":"craftec:item/copper_ingot"},
-        {"predicate":{"custom_model_data":11},"model":"craftec:item/steel_ingot"}
+        {"predicate":{"custom_model_data":1},"model":"crystalpledge:item/bronze_ingot"},
+        {"predicate":{"custom_model_data":2},"model":"crystalpledge:item/emp_crystal"},
+        {"predicate":{"custom_model_data":3},"model":"crystalpledge:item/oil"},
+        {"predicate":{"custom_model_data":4},"model":"crystalpledge:item/bakelite_pellets"},
+        {"predicate":{"custom_model_data":5},"model":"crystalpledge:item/bauxite"},
+        {"predicate":{"custom_model_data":6},"model":"crystalpledge:item/aluminum_ingot"},
+        {"predicate":{"custom_model_data":7},"model":"crystalpledge:item/casiterite"},
+        {"predicate":{"custom_model_data":8},"model":"crystalpledge:item/tin_ingot"},
+        {"predicate":{"custom_model_data":9},"model":"crystalpledge:item/hobermanite"},
+        {"predicate":{"custom_model_data":10},"model":"crystalpledge:item/copper_ingot"},
+        {"predicate":{"custom_model_data":11},"model":"crystalpledge:item/steel_ingot"}
     ]
 }

@@ -1,0 +1,9 @@
+{
+    "parent": "crystalpledge:mob/alex/head",
+	"display": {
+		"head": {
+			"translation": [0, -1.18, 0],
+			"scale": [1.715, 1.715, 1.715]
+		}
+	}
+}

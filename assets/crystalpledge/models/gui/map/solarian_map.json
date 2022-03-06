@@ -1,0 +1,23 @@
+{
+	"__comment": "Designed by Sentropic with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"texture": "crystalpledge:gui/map/solarian_map"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneZ1",
+			"from": [ -14, -16, 8 ],
+			"to": [ 30, 28, 8.001 ],
+			"faces": {
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"translation":  [ 79, -71, 0 ],
+			"scale":  [ 4, 4, 1 ]
+		}
+	},
+    "gui_light": "front"
+}

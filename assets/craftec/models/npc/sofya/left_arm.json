@@ -1,6 +1,0 @@
-{
-    "parent": "craftec:mob/baby_alex/left_arm",
-    "textures": {
-        "0": "craftec:npc/sofya"
-    }
-}

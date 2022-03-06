@@ -11,12 +11,12 @@
         }
     },
     "overrides": [
-        {"predicate":{"custom_model_data":1},"model":"craftec:gui/empty"},
-        {"predicate":{"custom_model_data":2},"model":"craftec:gui/crossed_swords"},
-        {"predicate":{"custom_model_data":3},"model":"craftec:gui/mech_sword_"},
-        {"predicate":{"custom_model_data":4},"model":"craftec:gui/cyber_sword_"},
-        {"predicate":{"custom_model_data":5},"model":"craftec:gui/mech_sword__"},
-        {"predicate":{"custom_model_data":6},"model":"craftec:gui/cyber_sword__"},
-        {"predicate":{"custom_model_data":7},"model":"craftec:gui/colon"}
+        {"predicate":{"custom_model_data":1},"model":"crystalpledge:gui/empty"},
+        {"predicate":{"custom_model_data":2},"model":"crystalpledge:gui/crossed_swords"},
+        {"predicate":{"custom_model_data":3},"model":"crystalpledge:gui/mech_sword_"},
+        {"predicate":{"custom_model_data":4},"model":"crystalpledge:gui/cyber_sword_"},
+        {"predicate":{"custom_model_data":5},"model":"crystalpledge:gui/mech_sword__"},
+        {"predicate":{"custom_model_data":6},"model":"crystalpledge:gui/cyber_sword__"},
+        {"predicate":{"custom_model_data":7},"model":"crystalpledge:gui/colon"}
     ]
 }

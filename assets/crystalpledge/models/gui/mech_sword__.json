@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "crystalpledge:gui/mech_sword__"
+    }
+}

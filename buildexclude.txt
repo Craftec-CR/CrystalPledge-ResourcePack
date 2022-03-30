@@ -1,9 +1,0 @@
-\.git\
-\.gitignore\
-\build.bat\
-\buildexclude.txt\
-\CrystalPledge.zip\
-.cubik\
-.bbmodel\
-.xcf\
-\VanillaTweaks.zip\

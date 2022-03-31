@@ -152,49 +152,73 @@ public class ResourcePackBuilder {
     private static void copy(Path destination, Path path, InputStream in) throws IOException {
         File file = destination.resolve(path).toFile();
         String[] strings = path.toString().split("\\\\");
-        if (strings[0].equals("assets") && strings[2].equals("font") && file.exists()) {
-            // Merge fonts
-            try {
-                JsonObject font;
-                try (InputStream existingIn = new FileInputStream(file)) {
-                    String json = new String(existingIn.readAllBytes()).replace("\\", "\\\\");
-                    font = JsonParser.parseString(json).getAsJsonObject();
-                }
-                JsonArray providers = font.getAsJsonArray("providers");
-                Set<String> existingChars = new HashSet<>();
-                for (JsonElement provider : providers) {
-                    for (JsonElement charLine : provider.getAsJsonObject().getAsJsonArray("chars")) {
-                        for (String character : splitCharLine(charLine.getAsString())) {
-                            if (!character.equals("\\u0000") && !existingChars.add(character)) {
-                                System.out.println(WARNING+"Duplicate char "+character+" in font "+path);
-                            }
-                        }
-                    }
-                }
-                for (JsonElement provider : JsonParser.parseString(new String(in.readAllBytes()).replace("\\", "\\\\")).getAsJsonObject().getAsJsonArray("providers")) {
-                    for (JsonElement charLine : provider.getAsJsonObject().getAsJsonArray("chars")) {
-                        for (String character : splitCharLine(charLine.getAsString())) {
-                            if (!character.equals("\\u0000") && !existingChars.add(character)) {
-                                System.out.println(WARNING+"Char "+character+" in font "+path+" already exists");
-                            }
-                        }
-                    }
-                    providers.add(provider);
-                }
-                file.delete();
-                String json = new GsonBuilder().setPrettyPrinting().create().toJson(font).replace("\\\\", "\\");
-                try (Writer writer = new FileWriter(file)) { writer.write(json); }
-            } catch (IllegalStateException | MalformedJsonException e) {
-                System.out.println(WARNING+"Invalid font: "+path);
-            }
-            return;
-        }
-
-        makeParent(file);
         if (file.exists()) {
-            System.out.println(WARNING+"\""+path+"\" already exists. Overwriting...");
-            file.delete();
+            // Attempt merging
+            if (strings[0].equals("assets") && strings[2].equals("font")) {
+                // Merge fonts
+                try {
+                    JsonObject font;
+                    try (InputStream existingIn = new FileInputStream(file)) {
+                        String json = new String(existingIn.readAllBytes()).replace("\\", "\\\\");
+                        font = JsonParser.parseString(json).getAsJsonObject();
+                    }
+                    JsonArray providers = font.getAsJsonArray("providers");
+                    Set<String> existingChars = new HashSet<>();
+                    for (JsonElement provider : providers) {
+                        for (JsonElement charLine : provider.getAsJsonObject().getAsJsonArray("chars")) {
+                            for (String character : splitCharLine(charLine.getAsString())) {
+                                if (!character.equals("\\u0000") && !existingChars.add(character)) {
+                                    System.out.println(WARNING+"Duplicate char "+character+" in font "+path);
+                                }
+                            }
+                        }
+                    }
+                    for (JsonElement provider : JsonParser.parseString(new String(in.readAllBytes()).replace("\\", "\\\\")).getAsJsonObject().getAsJsonArray("providers")) {
+                        for (JsonElement charLine : provider.getAsJsonObject().getAsJsonArray("chars")) {
+                            for (String character : splitCharLine(charLine.getAsString())) {
+                                if (!character.equals("\\u0000") && !existingChars.add(character)) {
+                                    System.out.println(WARNING+"Char "+character+" in font "+path+" already exists");
+                                }
+                            }
+                        }
+                        providers.add(provider);
+                    }
+                    file.delete();
+                    String json = new GsonBuilder().setPrettyPrinting().create().toJson(font).replace("\\\\", "\\");
+                    try (Writer writer = new FileWriter(file)) { writer.write(json); }
+                } catch (IllegalStateException | MalformedJsonException e) {
+                    System.out.println(WARNING+"Invalid font: "+path);
+                }
+                return;
+            } else if (strings[0].equals("assets") && strings[2].equals("sounds.json")) {
+                // Merge sounds.json
+                try {
+                    JsonObject sounds;
+                    try (Reader reader = new InputStreamReader(new FileInputStream(file))) {
+                        sounds = JsonParser.parseReader(reader).getAsJsonObject();
+                    }
+                    JsonObject newSounds;
+                    try (Reader reader = new InputStreamReader(in)) {
+                        newSounds = JsonParser.parseReader(reader).getAsJsonObject();
+                    }
+                    for (Map.Entry<String,JsonElement> soundEntry : newSounds.entrySet()) {
+                        String soundId = soundEntry.getKey();
+                        if (sounds.has(soundId)) { System.out.println(WARNING+"Duplicate sound "+soundId+" in path, overwriting..."); }
+                        sounds.add(soundId, soundEntry.getValue());
+                    }
+                    file.delete();
+                    String json = new GsonBuilder().setPrettyPrinting().create().toJson(sounds);
+                    try (Writer writer = new FileWriter(file)) { writer.write(json); }
+                } catch (IllegalStateException | MalformedJsonException e) {
+                    System.out.println(WARNING+"Invalid sounds.json: "+path);
+                }
+                return;
+            } else {
+                System.out.println(WARNING+"\""+path+"\" already exists. Overwriting...");
+                file.delete();
+            }
         }
+        makeParent(file);
         try (OutputStream out = new FileOutputStream(file)) { out.write(in.readAllBytes()); }
     }
 }

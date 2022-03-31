@@ -8,19 +8,15 @@ import java.nio.file.Path;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipException;
-import java.util.zip.ZipFile;
-import java.util.zip.ZipOutputStream;
-
-;
+import java.util.zip.*;
 
 public class ResourcePackBuilder {
     private static final String WARNING = "[WARNING] ";
     private static final String CRYSTAL_PLEDGE_ZIP = "CrystalPledge.zip";
     private static final String VANILLA_TWEAKS = "VanillaTweaks.zip";
+    private static final String NEGATIVE_SPACE = "NegativeSpaceFont.zip";
 
-    private static final List<String> mainFiles = List.of("LICENSE",
+    private static final List<String> mainFiles = List.of("LICENSE.txt",
                                                           "Negative Spaces license.txt",
                                                           "pack.mcmeta",
                                                           "pack.png");
@@ -28,9 +24,9 @@ public class ResourcePackBuilder {
     public synchronized static void main(String[] args) throws IOException {
         if (System.console() == null) {
             // Start new instance from cmd
-            String jarPath = args.length > 0 ? args[0] : URLDecoder.decode(
-                    ResourcePackBuilder.class.getProtectionDomain().getCodeSource().getLocation().toString().substring("file:/".length()), StandardCharsets.UTF_8);
-            Runtime.getRuntime().exec(new String[]{"cmd", "/c", "start", "cmd", "/k", "java -jar \""+jarPath+"\" && pause && exit"});
+            Runtime.getRuntime().exec(new String[]{"cmd", "/c", "start", "cmd", "/k", "java -jar \""
+                    +URLDecoder.decode(ResourcePackBuilder.class.getProtectionDomain().getCodeSource().getLocation().toString().substring("file:/".length()), StandardCharsets.UTF_8)
+                    +"\" && pause && exit"});
             return;
         }
 
@@ -65,7 +61,6 @@ public class ResourcePackBuilder {
                 }
             } catch (FileNotFoundException e) {
                 System.out.println(WARNING+"Could not find "+VANILLA_TWEAKS);
-                e.printStackTrace();
             }
 
             System.out.println("Copying assets...");

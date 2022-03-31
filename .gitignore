@@ -1,6 +1,6 @@
 CrystalPledge.zip
 /.idea/
-/*out/
+/*target/
 /*.iml
 /*.jar
 /*temp/

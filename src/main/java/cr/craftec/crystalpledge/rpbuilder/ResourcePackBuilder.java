@@ -275,8 +275,6 @@ public class ResourcePackBuilder {
                     System.out.println(WARNING+"Invalid sounds.json: "+path);
                 }
                 return;
-            } else if (path.startsWith("assets\\minecraft\\lang")) {
-                // TODO
             } else {
                 System.out.println(WARNING+"\""+path+"\" already exists. Overwriting...");
                 file.delete();

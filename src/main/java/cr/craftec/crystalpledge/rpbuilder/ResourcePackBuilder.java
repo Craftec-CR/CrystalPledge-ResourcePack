@@ -152,6 +152,67 @@ public class ResourcePackBuilder {
     private static void copy(Path destination, Path path, InputStream in) throws IOException {
         File file = destination.resolve(path).toFile();
         String[] strings = path.toString().split("\\\\");
+
+        // Lang files
+        if (path.startsWith("assets\\minecraft\\lang")) {
+            try {
+                JsonObject lang;
+                try (Reader reader = new InputStreamReader(in)) {
+                    lang = JsonParser.parseReader(reader).getAsJsonObject();
+                }
+                JsonArray langs = lang.getAsJsonArray("langs");
+                if (langs == null) {
+                    JsonObject existingLang;
+                    if (file.exists()) {
+                        try (Reader existingReader = new InputStreamReader(new FileInputStream(file))) {
+                            existingLang = JsonParser.parseReader(existingReader).getAsJsonObject();
+                        } catch (IllegalStateException | MalformedJsonException e) {
+                            System.out.println(WARNING+"Invalid lang file: "+file.toPath());
+                            return;
+                        }
+                        file.delete();
+                    } else {
+                        existingLang = new JsonObject();
+                    }
+                    for (Map.Entry<String,JsonElement> entry : lang.entrySet()) {
+                        String key = entry.getKey();
+                        if (existingLang.has(key)) { System.out.println(WARNING+"Existing lang key "+key+", overwriting..."); }
+                        existingLang.add(key, entry.getValue());
+                    }
+                    makeParent(file);
+                    try (Writer writer = new FileWriter(file)) {
+                        writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(existingLang));
+                    }
+                } else {
+                    for (JsonElement childLangKey : langs) {
+                        File childLangFile = destination.resolve("assets/minecraft/lang/"+childLangKey.getAsString()+".json").toFile();
+                        JsonObject childLang;
+                        if (childLangFile.exists()) {
+                            try (Reader childReader = new InputStreamReader(new FileInputStream(childLangFile))) {
+                                childLang = JsonParser.parseReader(childReader).getAsJsonObject();
+                            } catch (IllegalStateException | MalformedJsonException e) {
+                                System.out.println(WARNING+"Invalid lang file: "+file.toPath());
+                                continue;
+                            }
+                        } else { childLang = new JsonObject(); }
+                        for (Map.Entry<String,JsonElement> entry : lang.entrySet()) {
+                            String key = entry.getKey();
+                            if (key.equals("langs")) { continue; }
+                            if (childLang.has(key)) { System.out.println(WARNING+"Existing lang key "+key+", overwriting..."); }
+                            childLang.add(key, entry.getValue());
+                        }
+                        makeParent(childLangFile);
+                        try (Writer writer = new FileWriter(childLangFile)) {
+                            writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(childLang));
+                        }
+                    }
+                }
+            } catch (IllegalStateException | MalformedJsonException e) {
+                System.out.println(WARNING+"Invalid lang file: "+path);
+            }
+            return;
+        }
+
         if (file.exists()) {
             // Attempt merging
             if (strings[0].equals("assets") && strings[2].equals("font")) {
@@ -184,8 +245,9 @@ public class ResourcePackBuilder {
                         providers.add(provider);
                     }
                     file.delete();
-                    String json = new GsonBuilder().setPrettyPrinting().create().toJson(font).replace("\\\\", "\\");
-                    try (Writer writer = new FileWriter(file)) { writer.write(json); }
+                    try (Writer writer = new FileWriter(file)) {
+                        writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(font).replace("\\\\", "\\"));
+                    }
                 } catch (IllegalStateException | MalformedJsonException e) {
                     System.out.println(WARNING+"Invalid font: "+path);
                 }
@@ -213,6 +275,8 @@ public class ResourcePackBuilder {
                     System.out.println(WARNING+"Invalid sounds.json: "+path);
                 }
                 return;
+            } else if (path.startsWith("assets\\minecraft\\lang")) {
+                // TODO
             } else {
                 System.out.println(WARNING+"\""+path+"\" already exists. Overwriting...");
                 file.delete();

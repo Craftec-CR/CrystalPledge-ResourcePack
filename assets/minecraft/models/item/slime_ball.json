@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "crystalpledge:empty"
+        "layer0": "crystalpledge:color/empty"
     }
 }

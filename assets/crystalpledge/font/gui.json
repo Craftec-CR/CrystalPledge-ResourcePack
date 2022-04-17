@@ -86,6 +86,13 @@
             "ascent": -39,
             "height": 12,
             "chars": ["\uE081"]
+        },
+        {
+            "type": "bitmap",
+            "file": "crystalpledge:color/black.png",
+            "ascent": 175,
+            "height": 350,
+            "chars": ["\uE082"]
         }
     ]
 }

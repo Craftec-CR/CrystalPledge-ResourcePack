@@ -84,7 +84,7 @@ public class ResourcePackBuilder {
             System.out.println("Copying assets...");
             for (Path path : Files.walk(Path.of("assets")).collect(Collectors.toList())) {
                 File file = path.toFile();
-                if (file.isDirectory()) { continue; }
+                if (file.isDirectory() || path.endsWith(".bbmodel")) { continue; }
                 try (InputStream in = new FileInputStream(file)) {
                     copy(temp, path, in);
                 }
@@ -102,22 +102,18 @@ public class ResourcePackBuilder {
             }
 
             System.out.println("Zipping files...");
-            try (ZipOutputStream out = new ZipOutputStream(new FileOutputStream(zip))) {
+            try (OutputStream fileOut = new FileOutputStream(zip);
+                 ZipOutputStream out = new ZipOutputStream(fileOut)) {
                 for (Path path : tempFiles) {
                     File file = path.toFile();
                     if (file.isDirectory()) { continue; }
-                    try (InputStream in = new FileInputStream(file)) {
-                        out.putNextEntry(new ZipEntry(temp.relativize(path).toString()));
-                        out.write(in.readAllBytes());
-                    } catch (ZipException e) {
-                        System.out.println(WARNING+e.getMessage());
-                    } finally { out.closeEntry(); }
+                    out.putNextEntry(new ZipEntry(temp.relativize(path).toString().replace('\\', '/')));
+                    try (InputStream in = new FileInputStream(file)) { out.write(in.readAllBytes()); }
+                    out.closeEntry();
                 }
             }
         } finally {
-            try {
-                deleteFile(temp.toFile());
-            } catch (IOException e) { System.out.println(WARNING+e.getMessage()); }
+            try { deleteFile(temp.toFile()); } catch (IOException e) { System.out.println(WARNING+e.getMessage()); }
         }
 
         System.out.println("\nSuccessfully built "+CRYSTAL_PLEDGE_ZIP+'!');

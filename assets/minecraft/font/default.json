@@ -1,0 +1,18 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "crystalpledge:font/chat_globe.png",
+            "ascent": 12,
+            "height": 19,
+            "chars": ["\uE000\uE001\uE002\u0000\uE003"]
+        },
+        {
+            "type": "bitmap",
+            "file": "crystalpledge:font/thought_globe.png",
+            "ascent": 13,
+            "height": 20,
+            "chars": ["\uE004\uE005\uE006\u0000\uE007"]
+        }
+    ]
+}

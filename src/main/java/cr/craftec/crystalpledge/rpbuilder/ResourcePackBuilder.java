@@ -11,18 +11,29 @@ import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.zip.ZipEntry;
-import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
 public class ResourcePackBuilder {
-    private static final String WARNING = "[WARNING] ";
     private static final String CRYSTAL_PLEDGE_ZIP = "CrystalPledge.zip";
     private static final String VANILLA_TWEAKS = "VanillaTweaks.zip";
     private static final String NEGATIVE_SPACE = "NegativeSpaceFont.zip";
+    private static final String WARNING_SUPRESSIONS = "warning_suppressions.json";
     private static final List<String> mainFiles = List.of("LICENSE.txt",
                                                           "pack.mcmeta",
                                                           "pack.png");
+    private static final Map<WarningType,List<String>> warningSuppressions = new HashMap<>();
+
+    private static void warn(WarningType warningType, String id, String detail) {
+        id = id.replace('\\','/');
+        List<String> supressions = warningSuppressions.get(warningType);
+        if (supressions != null) {
+            for (String suppression : supressions) {
+                if (suppression.equals(id)) { return; }
+            }
+        }
+        System.out.println("[WARNING] "+warningType.getMessage()+id+((detail == null ? "" : ": "+detail)));
+    }
 
     public synchronized static void main(String[] args) throws IOException {
         if (System.console() == null) {
@@ -31,6 +42,32 @@ public class ResourcePackBuilder {
                     +URLDecoder.decode(ResourcePackBuilder.class.getProtectionDomain().getCodeSource().getLocation().toString().substring("file:/".length()), StandardCharsets.UTF_8)
                     +"\" && pause && exit"});
             return;
+        }
+
+        // Parse warning supressions
+        File supressionsFile = new File(WARNING_SUPRESSIONS);
+        if (supressionsFile.exists()) {
+            JsonObject supressionsObject = null;
+            try (InputStreamReader reader = new InputStreamReader(new FileInputStream(supressionsFile))) {
+                supressionsObject = JsonParser.parseReader(reader).getAsJsonObject();
+            } catch (MalformedJsonException | IllegalStateException ignored) {
+                warn(WarningType.INVALID, WARNING_SUPRESSIONS, null);
+            }
+            if (supressionsObject != null) {
+                for (Map.Entry<String,JsonElement> entry : supressionsObject.entrySet()) {
+                    String key = entry.getKey();
+                    List<String> suppressions = new LinkedList<>();
+                    try {
+                        WarningType warningType = WarningType.valueOf(key.toUpperCase());
+                        JsonArray array = entry.getValue().getAsJsonArray();
+                        for (JsonElement jsonElement : array) { suppressions.add(jsonElement.getAsString()); }
+                        warningSuppressions.put(warningType, suppressions);
+                    } catch (IllegalArgumentException | IllegalStateException e) {
+                        warn(WarningType.INVALID, WARNING_SUPRESSIONS, "key \""+key+"\"");
+                    }
+                }
+            }
+
         }
 
         deleteFile(new File("temp"));
@@ -58,7 +95,7 @@ public class ResourcePackBuilder {
                     }
                 }
             } catch (FileNotFoundException e) {
-                System.out.println(WARNING+"Could not find "+VANILLA_TWEAKS);
+                warn(WarningType.MISSING, VANILLA_TWEAKS, null);
             }
 
             System.out.println("Copying Negative Space Font...");
@@ -78,7 +115,7 @@ public class ResourcePackBuilder {
                     }
                 }
             } catch (FileNotFoundException e) {
-                System.out.println(WARNING+"Could not find "+NEGATIVE_SPACE);
+                warn(WarningType.MISSING, NEGATIVE_SPACE, null);
             }
 
             System.out.println("Copying assets...");
@@ -113,7 +150,7 @@ public class ResourcePackBuilder {
                 }
             }
         } finally {
-            try { deleteFile(temp.toFile()); } catch (IOException e) { System.out.println(WARNING+e.getMessage()); }
+            try { deleteFile(temp.toFile()); } catch (IOException e) { warn(WarningType.DELETE, temp.toString(), e.getMessage()); }
         }
 
         System.out.println("\nSuccessfully built "+CRYSTAL_PLEDGE_ZIP+'!');
@@ -121,7 +158,10 @@ public class ResourcePackBuilder {
 
     private static void deleteFile(File file) throws IOException {
         if (!file.exists()) { return; }
-        if (file.isDirectory()) { for (File subFile : file.listFiles()) { deleteFile(subFile); } }
+        if (file.isDirectory()) {
+            File[] contents = file.listFiles();
+            if (contents != null) { for (File subFile : contents) { deleteFile(subFile); } }
+        }
         if (!file.delete()) { throw new IOException("Failed to delete temp files"); }
     }
 
@@ -163,7 +203,7 @@ public class ResourcePackBuilder {
                         try (Reader existingReader = new InputStreamReader(new FileInputStream(file))) {
                             existingLang = JsonParser.parseReader(existingReader).getAsJsonObject();
                         } catch (IllegalStateException | MalformedJsonException e) {
-                            System.out.println(WARNING+"Invalid lang file: "+file.toPath());
+                            warn(WarningType.INVALID, file.toString(), null);
                             return;
                         }
                         file.delete();
@@ -172,7 +212,9 @@ public class ResourcePackBuilder {
                     }
                     for (Map.Entry<String,JsonElement> entry : lang.entrySet()) {
                         String key = entry.getKey();
-                        if (existingLang.has(key)) { System.out.println(WARNING+"Existing lang key "+key+", overwriting..."); }
+                        if (existingLang.has(key)) {
+                            warn(WarningType.LANG, path.toString()+':'+key, null);
+                        }
                         existingLang.add(key, entry.getValue());
                     }
                     makeParent(file);
@@ -187,14 +229,16 @@ public class ResourcePackBuilder {
                             try (Reader childReader = new InputStreamReader(new FileInputStream(childLangFile))) {
                                 childLang = JsonParser.parseReader(childReader).getAsJsonObject();
                             } catch (IllegalStateException | MalformedJsonException e) {
-                                System.out.println(WARNING+"Invalid lang file: "+file.toPath());
+                                warn(WarningType.INVALID, file.toString(), null);
                                 continue;
                             }
                         } else { childLang = new JsonObject(); }
                         for (Map.Entry<String,JsonElement> entry : lang.entrySet()) {
                             String key = entry.getKey();
                             if (key.equals("langs")) { continue; }
-                            if (childLang.has(key)) { System.out.println(WARNING+"Existing lang key "+key+", overwriting..."); }
+                            if (childLang.has(key)) {
+                                warn(WarningType.LANG, childLangFile.toString()+':'+key, null);
+                            }
                             childLang.add(key, entry.getValue());
                         }
                         makeParent(childLangFile);
@@ -204,7 +248,7 @@ public class ResourcePackBuilder {
                     }
                 }
             } catch (IllegalStateException | MalformedJsonException e) {
-                System.out.println(WARNING+"Invalid lang file: "+path);
+                warn(WarningType.INVALID, path.toString(), null);
             }
             return;
         }
@@ -225,7 +269,7 @@ public class ResourcePackBuilder {
                         for (JsonElement charLine : provider.getAsJsonObject().getAsJsonArray("chars")) {
                             for (String character : splitCharLine(charLine.getAsString())) {
                                 if (!character.equals("\\u0000") && !existingChars.add(character)) {
-                                    System.out.println(WARNING+"Duplicate char "+character+" in font "+path);
+                                    warn(WarningType.CHAR, file.toString()+':'+character, null);
                                 }
                             }
                         }
@@ -234,7 +278,7 @@ public class ResourcePackBuilder {
                         for (JsonElement charLine : provider.getAsJsonObject().getAsJsonArray("chars")) {
                             for (String character : splitCharLine(charLine.getAsString())) {
                                 if (!character.equals("\\u0000") && !existingChars.add(character)) {
-                                    System.out.println(WARNING+"Char "+character+" in font "+path+" already exists");
+                                    warn(WarningType.CHAR, file.toString()+':'+character, null);
                                 }
                             }
                         }
@@ -245,7 +289,7 @@ public class ResourcePackBuilder {
                         writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(font).replace("\\\\", "\\"));
                     }
                 } catch (IllegalStateException | MalformedJsonException e) {
-                    System.out.println(WARNING+"Invalid font: "+path);
+                    warn(WarningType.INVALID, path.toString(), null);
                 }
                 return;
             } else if (strings[0].equals("assets") && strings[2].equals("sounds.json")) {
@@ -261,18 +305,20 @@ public class ResourcePackBuilder {
                     }
                     for (Map.Entry<String,JsonElement> soundEntry : newSounds.entrySet()) {
                         String soundId = soundEntry.getKey();
-                        if (sounds.has(soundId)) { System.out.println(WARNING+"Duplicate sound "+soundId+" in path, overwriting..."); }
+                        if (sounds.has(soundId)) {
+                            warn(WarningType.SOUND, path.toString(), null);
+                        }
                         sounds.add(soundId, soundEntry.getValue());
                     }
                     file.delete();
                     String json = new GsonBuilder().setPrettyPrinting().create().toJson(sounds);
                     try (Writer writer = new FileWriter(file)) { writer.write(json); }
                 } catch (IllegalStateException | MalformedJsonException e) {
-                    System.out.println(WARNING+"Invalid sounds.json: "+path);
+                    warn(WarningType.INVALID, path.toString(), null);
                 }
                 return;
             } else {
-                System.out.println(WARNING+"\""+path+"\" already exists. Overwriting...");
+                warn(WarningType.FILE, path.toString(), null);
                 file.delete();
             }
         }

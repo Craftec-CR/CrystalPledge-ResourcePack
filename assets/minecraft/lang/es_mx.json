@@ -74,6 +74,13 @@
   "merchant.level.4": "§r§7Experto",
   "merchant.level.5": "§r§7Maestro",
   "merchant.trades": "§r§7Intercambios",
+  
+  "jigsaw_block.pool": "Target Pool:",
+  "jigsaw_block.name": "Attachment Type:",
+  "jigsaw_block.target": "Ignored",
+  "jigsaw_block.levels": "Ignored",
+  "jigsaw_block.keep_jigsaws": "Ignored",
+  "jigsaw_block.generate": "Ignored",
 
   "block.minecraft.jungle_fence": "Barras de Cobre",
   "block.minecraft.emerald_ore": "Mineral de Cobre",
@@ -81,6 +88,17 @@
   "block.minecraft.lapis_ore": "Mineral de Bauxita",
   "block.minecraft.diamond_ore": "Mineral de Cristal PEM",
   "block.minecraft.sea_lantern": "Linterna PEM",
+  
+  "attribute.name.range": "§rRango",
+  "attribute.name.attack_speed": "§rVelocidad de Ataque",
+  "attribute.name.physical_damage": "§rDaño Físico",
+  
+  "item.crystalpledge.sword": "§r§bEspada (Arma)",
+  "item.crystalpledge.scalpel": "§r§7Bisturí",
+  "item.crystalpledge.scalpel.0": "§r§8Solo es un bisturí quirúrgico. Probablemente",
+  "item.crystalpledge.scalpel.1": "§r§8le perteneció a Karolyn antes de que lo robaras",
+  "item.crystalpledge.headset": "§r§bHeadset",
+  
   "item.crystalpledge.soxhlet_gun": "§6Soxhlet Gun",
   "item.crystalpledge.bronze_ingot": "Lingote de Bronce",
   "item.crystalpledge.emp_crystal": "Cristal PEM",
@@ -98,14 +116,13 @@
   "item.crystalpledge.shielder_headset": "§6Headset de Escudero",
   "item.crystalpledge.blade_dancer_headset": "§6Headset de Danzarín de la Hoja",
   "item.crystalpledge.berserker_headset": "§6Headset de berserker",
-  "attribute.name.generic.luck": "Rango",
-  "enchantment.minecraft.binding_curse": "§r§7Implantado",
+  
+  "npc.steve": "§rSteve",
+  "npc.sofia": "§rSofía",
+  "npc.andreine": "§rAndreine",
+  "mob.cardophyte": "§r§cCardófito",
   "subtitles.mob.cardophyte.hurt": "Cardófito herido",
   "subtitles.mob.cardophyte.death": "Cardófito muerto",
-  "jigsaw_block.pool": "Target Pool:",
-  "jigsaw_block.name": "Attachment Type:",
-  "jigsaw_block.target": "Ignored",
-  "jigsaw_block.levels": "Ignored",
-  "jigsaw_block.keep_jigsaws": "Ignored",
-  "jigsaw_block.generate": "Ignored"
+  "mob.talpid": "§r§cTálpido",
+  "mob.baby_talpid": "§r§cTálpido Bebé"
 }

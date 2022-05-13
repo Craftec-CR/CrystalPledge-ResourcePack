@@ -74,6 +74,13 @@
   "merchant.level.4": "§r§7Expert",
   "merchant.level.5": "§r§7Master",
   "merchant.trades": "§r§7Trades",
+  
+  "jigsaw_block.pool": "Target Pool:",
+  "jigsaw_block.name": "Attachment Type:",
+  "jigsaw_block.target": "Ignored",
+  "jigsaw_block.levels": "Ignored",
+  "jigsaw_block.keep_jigsaws": "Ignored",
+  "jigsaw_block.generate": "Ignored",
 
   "block.minecraft.jungle_fence": "Copper Bars",
   "block.minecraft.emerald_ore": "Copper Ore",
@@ -81,6 +88,17 @@
   "block.minecraft.lapis_ore": "Bauxite Ore",
   "block.minecraft.diamond_ore": "EMP Crystal Ore",
   "block.minecraft.sea_lantern": "EMP Lantern",
+  
+  "attribute.name.range": "§rRange",
+  "attribute.name.attack_speed": "§rAttack Speed",
+  "attribute.name.physical_damage": "§rPhysical Damage",
+  
+  "item.crystalpledge.sword": "§r§bSword (Weapon)",
+  "item.crystalpledge.scalpel": "§r§7Scalpel",
+  "item.crystalpledge.scalpel.0": "§r§8Just a surgical scalpel. Probably",
+  "item.crystalpledge.scalpel.1": "§r§8belonged to Karolyn before you stole it",
+  "item.crystalpledge.headset": "§r§bHeadset",
+  
   "item.crystalpledge.soxhlet_gun": "§6Soxhlet Gun",
   "item.crystalpledge.bronze_ingot": "Bronze Ingot",
   "item.crystalpledge.emp_crystal": "EMP crystal",
@@ -98,14 +116,13 @@
   "item.crystalpledge.shielder_headset": "§6Shielder Headset",
   "item.crystalpledge.blade_dancer_headset": "§6Blade Dancer Headset",
   "item.crystalpledge.berserker_headset": "§6Berserker Headset",
-  "attribute.name.generic.luck": "Range",
-  "enchantment.minecraft.binding_curse": "§r§7Implanted",
+  
+  "npc.steve": "§rSteve",
+  "npc.sofia": "§rSofía",
+  "npc.andreine": "§rAndreine",
+  "mob.cardophyte": "§r§cCardophyte",
   "subtitles.mob.cardophyte.hurt": "Cardophyte hurts",
   "subtitles.mob.cardophyte.death": "Cardophyte dies",
-  "jigsaw_block.pool": "Target Pool:",
-  "jigsaw_block.name": "Attachment Type:",
-  "jigsaw_block.target": "Ignored",
-  "jigsaw_block.levels": "Ignored",
-  "jigsaw_block.keep_jigsaws": "Ignored",
-  "jigsaw_block.generate": "Ignored"
+  "mob.talpid": "§r§cTalpid",
+  "mob.baby_talpid": "§r§cBaby Talpid"
 }

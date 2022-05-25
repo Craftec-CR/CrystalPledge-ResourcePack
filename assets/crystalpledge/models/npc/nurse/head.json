@@ -1,0 +1,6 @@
+{
+    "parent": "crystalpledge:player/steve/head",
+    "textures": {
+        "0": "crystalpledge:npc/nurse"
+    }
+}

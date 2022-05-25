@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
-    "textures": {
-        "0": "crystalpledge:player/alex"
-    },
+	"textures": {
+		"0": "crystalpledge:player/alex"
+	},
 	"elements": [
 		{
 			"name": "left_leg_2nd_layer",
@@ -13,7 +13,7 @@
 				"east": {"uv": [0, 13, 1, 16], "texture": "#0"},
 				"south": {"uv": [3, 13, 4, 16], "texture": "#0"},
 				"west": {"uv": [2, 13, 3, 16], "texture": "#0"},
-				"up": {"uv": [2, 12, 1, 11], "texture": "#0"},
+				"up": {"uv": [2, 13, 1, 12], "texture": "#0"},
 				"down": {"uv": [3, 12, 2, 13], "texture": "#0"}
 			}
 		},

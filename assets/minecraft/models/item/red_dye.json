@@ -1,0 +1,29 @@
+{
+  "comment": "Enemies",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/red_dye"
+  },
+    "overrides": [
+        {"predicate":{"custom_model_data":100},"model":"crystalpledge:mob/mech_bandit/head"},
+        {"predicate":{"custom_model_data":101},"model":"crystalpledge:mob/mech_bandit/left_arm"},
+        {"predicate":{"custom_model_data":102},"model":"crystalpledge:mob/mech_bandit/right_arm"},
+        {"predicate":{"custom_model_data":103},"model":"crystalpledge:mob/mech_bandit/body"},
+        {"predicate":{"custom_model_data":104},"model":"crystalpledge:mob/mech_bandit/left_leg"},
+        {"predicate":{"custom_model_data":105},"model":"crystalpledge:mob/mech_bandit/right_leg"},
+        {"predicate":{"custom_model_data":300},"model":"crystalpledge:mob/talpid/0"},
+        {"predicate":{"custom_model_data":301},"model":"crystalpledge:mob/talpid/1"},
+        {"predicate":{"custom_model_data":302},"model":"crystalpledge:mob/talpid/2"},
+        {"predicate":{"custom_model_data":400},"model":"crystalpledge:mob/cardophyte/basic/body"},
+        {"predicate":{"custom_model_data":401},"model":"crystalpledge:mob/cardophyte/basic/leg"},
+        {"predicate":{"custom_model_data":10000},"model":"crystalpledge:mob/cyber_bandit/head"},
+        {"predicate":{"custom_model_data":10001},"model":"crystalpledge:mob/cyber_bandit/left_arm"},
+        {"predicate":{"custom_model_data":10002},"model":"crystalpledge:mob/cyber_bandit/right_arm"},
+        {"predicate":{"custom_model_data":10003},"model":"crystalpledge:mob/cyber_bandit/body"},
+        {"predicate":{"custom_model_data":10004},"model":"crystalpledge:mob/cyber_bandit/left_leg"},
+        {"predicate":{"custom_model_data":10005},"model":"crystalpledge:mob/cyber_bandit/right_leg"},
+        {"predicate":{"custom_model_data":10100},"model":"crystalpledge:mob/rat/0"},
+        {"predicate":{"custom_model_data":10101},"model":"crystalpledge:mob/rat/1"},
+        {"predicate":{"custom_model_data":10102},"model":"crystalpledge:mob/rat/2"}
+    ]
+}

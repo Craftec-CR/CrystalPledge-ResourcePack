@@ -1,5 +1,5 @@
 {
-    "parent": "crystalpledge:mob/steve/body",
+    "parent": "crystalpledge:player/steve/body",
     "textures": {
         "0": "crystalpledge:npc/andreine"
     }

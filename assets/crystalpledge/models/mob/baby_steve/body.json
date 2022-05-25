@@ -1,9 +1,0 @@
-{
-    "parent": "crystalpledge:mob/steve/body",
-	"display": {
-		"head": {
-			"translation": [0, -0.915, 0.115],
-			"scale": [1.143, 1.143, 1.143]
-		}
-	}
-}

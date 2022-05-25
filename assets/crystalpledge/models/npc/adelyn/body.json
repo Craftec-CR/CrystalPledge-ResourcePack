@@ -1,0 +1,6 @@
+{
+    "parent": "crystalpledge:player/steve/body",
+    "textures": {
+        "0": "crystalpledge:npc/adelyn"
+    }
+}

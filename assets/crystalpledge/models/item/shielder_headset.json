@@ -3,7 +3,8 @@
 	"parent": "crystalpledge:item/headset",
 	"texture_size": [32, 32],
 	"textures": {
-		"2": "crystalpledge:item/shielder_headset"
+		"2": "crystalpledge:item/shielder_headset",
+		"particle": "crystalpledge:item/shielder_headset"
 	},
 	"elements": [
 		{

@@ -1,0 +1,10 @@
+{
+    "parent": "crystalpledge:player/steve/left_leg",
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-4, -2.1, 4],
+			"scale": [1, 1, 1]
+		}
+	}
+}

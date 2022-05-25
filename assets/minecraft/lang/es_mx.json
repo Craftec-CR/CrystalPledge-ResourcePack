@@ -93,7 +93,7 @@
   "attribute.name.attack_speed": "§rVelocidad de Ataque",
   "attribute.name.physical_damage": "§rDaño Físico",
   
-  "item.crystalpledge.sword": "§r§bEspada (Arma)",
+  "item.crystalpledge.swordclass": "§r§bEspada (Arma)",
   "item.crystalpledge.scalpel": "§r§7Bisturí",
   "item.crystalpledge.scalpel.0": "§r§8Solo es un bisturí quirúrgico. Probablemente",
   "item.crystalpledge.scalpel.1": "§r§8le perteneció a Karolyn antes de que lo robaras",

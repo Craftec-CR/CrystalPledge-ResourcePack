@@ -1,15 +1,16 @@
 {
+    "comment": "Headsets",
     "parent": "item/generated",
     "textures": {
         "layer0": "item/brick"
     },
 	"overrides": [
-		{"predicate":{"custom_model_data":1},"model": "crystalpledge:gui/soulpad"},
+		{"predicate":{"custom_model_data":1},"model": "crystalpledge:item/soulpad"},
 		{"predicate":{"custom_model_data":2},"model": "crystalpledge:item/warrior_headset"},
 		{"predicate":{"custom_model_data":3},"model": "crystalpledge:item/shielder_headset"},
 		{"predicate":{"custom_model_data":4},"model": "crystalpledge:item/blade_dancer_headset"},
 		{"predicate":{"custom_model_data":5},"model": "crystalpledge:item/berserker_headset"},
-		{"predicate":{"custom_model_data":6},"model": "crystalpledge:item/explorer_headset"},
-		{"predicate":{"custom_model_data":7},"model": "crystalpledge:gui/map/solarian_map"}
+		{"predicate":{"custom_model_data":7},"model": "crystalpledge:item/herbalist_headset"},
+		{"predicate":{"custom_model_data":100},"model": "crystalpledge:item/explorer_headset"}
 	]
 }

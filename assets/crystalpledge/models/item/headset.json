@@ -3,8 +3,7 @@
 	"textures": {
 		"2": "crystalpledge:item/warrior_headset",
 		"3": "crystalpledge:item/headset",
-		"4": "crystalpledge:player/steve",
-		"particle": "crystalpledge:player/steve"
+		"4": "crystalpledge:player/steve"
 	},
 	"elements": [
 		{

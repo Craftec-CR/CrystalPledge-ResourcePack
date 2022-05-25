@@ -1,5 +1,5 @@
 {
-    "comment": "Made by Stridey",
+    "comment": "Blocking shields",
     "parent": "builtin/entity",
 	"gui_light": "front",
     "textures": {

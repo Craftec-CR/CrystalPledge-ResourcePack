@@ -1,0 +1,15 @@
+{
+  "comment": "Player skins",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/blue_dye"
+  },
+    "overrides": [
+        {"predicate":{"custom_model_data":1},"model":"crystalpledge:player/steve/head"},
+        {"predicate":{"custom_model_data":2},"model":"crystalpledge:player/steve/left_arm"},
+        {"predicate":{"custom_model_data":3},"model":"crystalpledge:player/steve/right_arm"},
+        {"predicate":{"custom_model_data":4},"model":"crystalpledge:player/steve/body"},
+        {"predicate":{"custom_model_data":5},"model":"crystalpledge:player/steve/left_leg"},
+        {"predicate":{"custom_model_data":6},"model":"crystalpledge:player/steve/right_leg"}
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "crystalpledge:player/baby_alex/body",
+    "textures": {
+        "0": "crystalpledge:npc/sofia"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "parent": "crystalpledge:mob/steve/right_arm",
+    "parent": "crystalpledge:player/steve/right_arm",
     "textures": {
         "0": "crystalpledge:mob/mech_bandit"
     }

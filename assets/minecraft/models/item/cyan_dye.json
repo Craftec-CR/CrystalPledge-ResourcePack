@@ -1,0 +1,27 @@
+{
+  "comment": "NPCs",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/cyan_dye"
+  },
+    "overrides": [
+        {"predicate":{"custom_model_data":1},"model":"crystalpledge:npc/sofia/head"},
+        {"predicate":{"custom_model_data":2},"model":"crystalpledge:npc/sofia/left_arm"},
+        {"predicate":{"custom_model_data":3},"model":"crystalpledge:npc/sofia/right_arm"},
+        {"predicate":{"custom_model_data":4},"model":"crystalpledge:npc/sofia/body"},
+        {"predicate":{"custom_model_data":5},"model":"crystalpledge:npc/sofia/left_leg"},
+        {"predicate":{"custom_model_data":6},"model":"crystalpledge:npc/sofia/right_leg"},
+        {"predicate":{"custom_model_data":13},"model":"crystalpledge:npc/adelyn/head"},
+        {"predicate":{"custom_model_data":14},"model":"crystalpledge:npc/adelyn/left_arm"},
+        {"predicate":{"custom_model_data":15},"model":"crystalpledge:npc/adelyn/right_arm"},
+        {"predicate":{"custom_model_data":16},"model":"crystalpledge:npc/adelyn/body"},
+        {"predicate":{"custom_model_data":17},"model":"crystalpledge:npc/adelyn/left_leg"},
+        {"predicate":{"custom_model_data":18},"model":"crystalpledge:npc/adelyn/right_leg"},
+        {"predicate":{"custom_model_data":100},"model":"crystalpledge:npc/andreine/head"},
+        {"predicate":{"custom_model_data":101},"model":"crystalpledge:npc/andreine/left_arm"},
+        {"predicate":{"custom_model_data":102},"model":"crystalpledge:npc/andreine/right_arm"},
+        {"predicate":{"custom_model_data":103},"model":"crystalpledge:npc/andreine/body"},
+        {"predicate":{"custom_model_data":104},"model":"crystalpledge:npc/andreine/left_leg"},
+        {"predicate":{"custom_model_data":105},"model":"crystalpledge:npc/andreine/right_leg"}
+    ]
+}

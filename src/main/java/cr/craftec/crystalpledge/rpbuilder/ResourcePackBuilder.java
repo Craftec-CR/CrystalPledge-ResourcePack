@@ -24,8 +24,13 @@ public class ResourcePackBuilder {
                                                           "pack.png");
     private static final Map<WarningType,List<String>> warningSuppressions = new HashMap<>();
 
+    private static final Map<Path,JsonObject> langs = new HashMap<>();
+    private static final Map<Path,JsonObject> fonts = new HashMap<>();
+    private static final Map<Path,Set<String>> chars = new HashMap<>();
+    private static final Map<Path,JsonObject> sounds = new HashMap<>();
+
     private static void warn(WarningType warningType, String id, String detail) {
-        id = id.replace('\\','/');
+        id = id.replace('\\', '/');
         List<String> supressions = warningSuppressions.get(warningType);
         if (supressions != null) {
             for (String suppression : supressions) {
@@ -126,6 +131,30 @@ public class ResourcePackBuilder {
                     copy(temp, path, in);
                 }
             }
+            for (Map.Entry<Path,JsonObject> entry : langs.entrySet()) {
+                Path path = temp.resolve(entry.getKey());
+                File langFile = path.toFile();
+                makeParent(langFile);
+                try (Writer writer = new FileWriter(langFile)) {
+                    writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(entry.getValue()));
+                }
+            }
+            for (Map.Entry<Path,JsonObject> entry : fonts.entrySet()) {
+                Path path = temp.resolve(entry.getKey());
+                File fontFile = path.toFile();
+                makeParent(fontFile);
+                try (Writer writer = new FileWriter(fontFile)) {
+                    writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(entry.getValue()).replace("\\\\", "\\"));
+                }
+            }
+            for (Map.Entry<Path,JsonObject> entry : sounds.entrySet()) {
+                Path path = temp.resolve(entry.getKey());
+                File soundFile = path.toFile();
+                makeParent(soundFile);
+                try (Writer writer = new FileWriter(soundFile)) {
+                    writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(entry.getValue()));
+                }
+            }
 
             List<Path> tempFiles = Files.walk(temp).collect(Collectors.toList());
 
@@ -150,7 +179,9 @@ public class ResourcePackBuilder {
                 }
             }
         } finally {
-            try { deleteFile(temp.toFile()); } catch (IOException e) { warn(WarningType.DELETE, temp.toString(), e.getMessage()); }
+            try { deleteFile(temp.toFile()); } catch (IOException e) {
+                warn(WarningType.DELETE, temp.toString(), e.getMessage());
+            }
         }
 
         System.out.println("\nSuccessfully built "+CRYSTAL_PLEDGE_ZIP+'!');
@@ -186,64 +217,62 @@ public class ResourcePackBuilder {
     }
 
     private static void copy(Path destination, Path path, InputStream in) throws IOException {
-        File file = destination.resolve(path).toFile();
         String[] strings = path.toString().split("\\\\");
+        File file = destination.resolve(path).toFile();
 
         // Lang files
         if (path.startsWith("assets\\minecraft\\lang")) {
             try {
-                JsonObject lang;
+                JsonObject sourceLang;
                 try (Reader reader = new InputStreamReader(in)) {
-                    lang = JsonParser.parseReader(reader).getAsJsonObject();
+                    sourceLang = JsonParser.parseReader(reader).getAsJsonObject();
                 }
-                JsonArray langs = lang.getAsJsonArray("langs");
+                JsonArray langs = sourceLang.getAsJsonArray("langs");
                 if (langs == null) {
-                    JsonObject existingLang;
-                    if (file.exists()) {
-                        try (Reader existingReader = new InputStreamReader(new FileInputStream(file))) {
-                            existingLang = JsonParser.parseReader(existingReader).getAsJsonObject();
-                        } catch (IllegalStateException | MalformedJsonException e) {
-                            warn(WarningType.INVALID, file.toString(), null);
-                            return;
+                    JsonObject masterLang = ResourcePackBuilder.langs.get(path);
+                    if (masterLang == null) {
+                        if (file.exists()) {
+                            try (Reader existingReader = new InputStreamReader(new FileInputStream(file))) {
+                                masterLang = JsonParser.parseReader(existingReader).getAsJsonObject();
+                            } catch (IllegalStateException | MalformedJsonException e) {
+                                warn(WarningType.INVALID, file.toString(), null);
+                                return;
+                            }
+                            file.delete();
+                        } else {
+                            masterLang = new JsonObject();
                         }
-                        file.delete();
-                    } else {
-                        existingLang = new JsonObject();
+                        ResourcePackBuilder.langs.put(path, masterLang);
                     }
-                    for (Map.Entry<String,JsonElement> entry : lang.entrySet()) {
+                    for (Map.Entry<String,JsonElement> entry : sourceLang.entrySet()) {
                         String key = entry.getKey();
-                        if (existingLang.has(key)) {
-                            warn(WarningType.LANG, path.toString()+':'+key, null);
-                        }
-                        existingLang.add(key, entry.getValue());
-                    }
-                    makeParent(file);
-                    try (Writer writer = new FileWriter(file)) {
-                        writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(existingLang));
+                        if (masterLang.has(key)) { warn(WarningType.LANG, path.toString()+':'+key, null); }
+                        masterLang.add(key, entry.getValue());
                     }
                 } else {
                     for (JsonElement childLangKey : langs) {
-                        File childLangFile = destination.resolve("assets/minecraft/lang/"+childLangKey.getAsString()+".json").toFile();
-                        JsonObject childLang;
-                        if (childLangFile.exists()) {
-                            try (Reader childReader = new InputStreamReader(new FileInputStream(childLangFile))) {
-                                childLang = JsonParser.parseReader(childReader).getAsJsonObject();
-                            } catch (IllegalStateException | MalformedJsonException e) {
-                                warn(WarningType.INVALID, file.toString(), null);
-                                continue;
+                        Path childPath = Path.of("assets/minecraft/lang/"+childLangKey.getAsString()+".json");
+                        File childFile = destination.resolve(childPath).toFile();
+                        JsonObject masterLang = ResourcePackBuilder.langs.get(childPath);
+                        if (masterLang == null) {
+                            if (childFile.exists()) {
+                                try (Reader existingReader = new InputStreamReader(new FileInputStream(childFile))) {
+                                    masterLang = JsonParser.parseReader(existingReader).getAsJsonObject();
+                                } catch (IllegalStateException | MalformedJsonException e) {
+                                    warn(WarningType.INVALID, childFile.toString(), null);
+                                    return;
+                                }
+                                childFile.delete();
+                            } else {
+                                masterLang = new JsonObject();
                             }
-                        } else { childLang = new JsonObject(); }
-                        for (Map.Entry<String,JsonElement> entry : lang.entrySet()) {
+                            ResourcePackBuilder.langs.put(childPath, masterLang);
+                        }
+                        for (Map.Entry<String,JsonElement> entry : sourceLang.entrySet()) {
                             String key = entry.getKey();
                             if (key.equals("langs")) { continue; }
-                            if (childLang.has(key)) {
-                                warn(WarningType.LANG, childLangFile.toString()+':'+key, null);
-                            }
-                            childLang.add(key, entry.getValue());
-                        }
-                        makeParent(childLangFile);
-                        try (Writer writer = new FileWriter(childLangFile)) {
-                            writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(childLang));
+                            if (masterLang.has(key)) { warn(WarningType.LANG, childPath.toString()+':'+key, null); }
+                            masterLang.add(key, entry.getValue());
                         }
                     }
                 }
@@ -258,22 +287,27 @@ public class ResourcePackBuilder {
             if (strings[0].equals("assets") && strings[2].equals("font")) {
                 // Merge fonts
                 try {
-                    JsonObject font;
-                    try (InputStream existingIn = new FileInputStream(file)) {
-                        String json = new String(existingIn.readAllBytes()).replace("\\", "\\\\");
-                        font = JsonParser.parseString(json).getAsJsonObject();
-                    }
-                    JsonArray providers = font.getAsJsonArray("providers");
-                    Set<String> existingChars = new HashSet<>();
-                    for (JsonElement provider : providers) {
-                        for (JsonElement charLine : provider.getAsJsonObject().getAsJsonArray("chars")) {
-                            for (String character : splitCharLine(charLine.getAsString())) {
-                                if (!character.equals("\\u0000") && !existingChars.add(character)) {
-                                    warn(WarningType.CHAR, file.toString()+':'+character, null);
+                    JsonArray masterProviders;
+                    {
+                        JsonObject masterFont = fonts.get(path);
+                        if (masterFont == null) {
+                            if (file.exists()) {
+                                try (InputStream inputStream = new FileInputStream(file)) {
+                                    masterFont = JsonParser.parseString(new String(inputStream.readAllBytes()).replace("\\", "\\\\")).getAsJsonObject();
+                                } catch (IllegalStateException | MalformedJsonException e) {
+                                    warn(WarningType.INVALID, file.toString(), null);
+                                    return;
                                 }
+                                file.delete();
+                            } else {
+                                masterFont = new JsonObject();
                             }
+                            fonts.put(path, masterFont);
                         }
+                        masterProviders = masterFont.getAsJsonArray("providers");
+                        if (masterProviders == null) { masterFont.add("providers", masterProviders = new JsonArray()); }
                     }
+                    Set<String> existingChars = chars.computeIfAbsent(path, key -> new HashSet<>());
                     for (JsonElement provider : JsonParser.parseString(new String(in.readAllBytes()).replace("\\", "\\\\")).getAsJsonObject().getAsJsonArray("providers")) {
                         for (JsonElement charLine : provider.getAsJsonObject().getAsJsonArray("chars")) {
                             for (String character : splitCharLine(charLine.getAsString())) {
@@ -282,11 +316,7 @@ public class ResourcePackBuilder {
                                 }
                             }
                         }
-                        providers.add(provider);
-                    }
-                    file.delete();
-                    try (Writer writer = new FileWriter(file)) {
-                        writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(font).replace("\\\\", "\\"));
+                        masterProviders.add(provider);
                     }
                 } catch (IllegalStateException | MalformedJsonException e) {
                     warn(WarningType.INVALID, path.toString(), null);
@@ -295,9 +325,20 @@ public class ResourcePackBuilder {
             } else if (strings[0].equals("assets") && strings[2].equals("sounds.json")) {
                 // Merge sounds.json
                 try {
-                    JsonObject sounds;
-                    try (Reader reader = new InputStreamReader(new FileInputStream(file))) {
-                        sounds = JsonParser.parseReader(reader).getAsJsonObject();
+                    JsonObject masterSounds = sounds.get(path);
+                    if (masterSounds == null) {
+                        if (file.exists()) {
+                            try (Reader existingReader = new InputStreamReader(new FileInputStream(file))) {
+                                masterSounds = JsonParser.parseReader(existingReader).getAsJsonObject();
+                            } catch (IllegalStateException | MalformedJsonException e) {
+                                warn(WarningType.INVALID, file.toString(), null);
+                                return;
+                            }
+                            file.delete();
+                        } else {
+                            masterSounds = new JsonObject();
+                        }
+                        sounds.put(path, masterSounds);
                     }
                     JsonObject newSounds;
                     try (Reader reader = new InputStreamReader(in)) {
@@ -305,14 +346,11 @@ public class ResourcePackBuilder {
                     }
                     for (Map.Entry<String,JsonElement> soundEntry : newSounds.entrySet()) {
                         String soundId = soundEntry.getKey();
-                        if (sounds.has(soundId)) {
+                        if (masterSounds.has(soundId)) {
                             warn(WarningType.SOUND, path.toString(), null);
                         }
-                        sounds.add(soundId, soundEntry.getValue());
+                        masterSounds.add(soundId, soundEntry.getValue());
                     }
-                    file.delete();
-                    String json = new GsonBuilder().setPrettyPrinting().create().toJson(sounds);
-                    try (Writer writer = new FileWriter(file)) { writer.write(json); }
                 } catch (IllegalStateException | MalformedJsonException e) {
                     warn(WarningType.INVALID, path.toString(), null);
                 }

@@ -12,7 +12,7 @@ public enum WarningType {
 
     private final String message;
 
-    WarningType(String message){ this.message = message; }
+    WarningType(String message) { this.message = message; }
 
     public String getMessage() { return message; }
 }

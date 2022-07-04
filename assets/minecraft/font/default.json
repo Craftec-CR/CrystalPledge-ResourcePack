@@ -13,6 +13,20 @@
             "ascent": 13,
             "height": 20,
             "chars": ["\uE004\uE005\uE006\u0000\uE007"]
+        },
+        {
+            "type": "bitmap",
+            "file": "crystalpledge:font/quest.png",
+            "ascent": 9,
+            "height": 12,
+            "chars": ["\uE008"]
+        },
+        {
+            "type": "bitmap",
+            "file": "crystalpledge:font/side_quest.png",
+            "ascent": 9,
+            "height": 12,
+            "chars": ["\uE009"]
         }
     ]
 }

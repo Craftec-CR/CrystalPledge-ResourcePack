@@ -96,7 +96,7 @@
   "item.crystalpledge.swordclass": "§r§bEspada (Arma)",
   "item.crystalpledge.scalpel": "§r§7Bisturí",
   "item.crystalpledge.scalpel.0": "§r§8Solo es un bisturí quirúrgico. Probablemente",
-  "item.crystalpledge.scalpel.1": "§r§8le perteneció a Karolyn antes de que lo robaras",
+  "item.crystalpledge.scalpel.1": "§r§8le perteneció a Adelyn antes de que lo robaras",
   "item.crystalpledge.headset": "§r§bHeadset",
   
   "item.crystalpledge.soxhlet_gun": "§6Soxhlet Gun",
@@ -118,13 +118,13 @@
   "item.crystalpledge.berserker_headset": "§6Headset de berserker",
   
   "npc.steve": "§rSteve",
-  "npc.sofia": "§rSofía",
-  "npc.nurse": "§rEnfermero",
-  "npc.adelyn": "§rAdelyn",
-  "npc.andreine": "§rAndreine",
-  "mob.cardophyte": "§r§cCardófito",
+  "npc.sofia": "§r§a<§rSofía§a>",
+  "npc.nurse": "§r§a<§rEnfermero§a>",
+  "npc.adelyn": "§r§a<§rAdelyn§a>",
+  "npc.andreine": "§r§a<§rAndreine§a>",
+  "mob.cardophyte": "§r§c<§rCardófito§c>",
   "subtitles.mob.cardophyte.hurt": "Cardófito herido",
   "subtitles.mob.cardophyte.death": "Cardófito muerto",
-  "mob.talpid": "§r§cTálpido",
-  "mob.baby_talpid": "§r§cTálpido Bebé"
+  "mob.talpid": "§r§c<§rTálpido§c>",
+  "mob.baby_talpid": "§r§c<§rTálpido Bebé§c>"
 }

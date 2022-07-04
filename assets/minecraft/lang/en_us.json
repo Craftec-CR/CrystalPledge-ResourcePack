@@ -96,7 +96,7 @@
   "item.crystalpledge.swordclass": "§r§bSword (Weapon)",
   "item.crystalpledge.scalpel": "§r§7Scalpel",
   "item.crystalpledge.scalpel.0": "§r§8Just a surgical scalpel. Probably",
-  "item.crystalpledge.scalpel.1": "§r§8belonged to Karolyn before you stole it",
+  "item.crystalpledge.scalpel.1": "§r§8belonged to Adelyn before you stole it",
   "item.crystalpledge.headset": "§r§bHeadset",
   
   "item.crystalpledge.soxhlet_gun": "§6Soxhlet Gun",
@@ -118,13 +118,13 @@
   "item.crystalpledge.berserker_headset": "§6Berserker Headset",
   
   "npc.steve": "§rSteve",
-  "npc.sofia": "§rSofía",
-  "npc.nurse": "§rNurse",
-  "npc.adelyn": "§rAdelyn",
-  "npc.andreine": "§rAndreine",
-  "mob.cardophyte": "§r§cCardophyte",
+  "npc.sofia": "§r§a<§rSofía§a>",
+  "npc.nurse": "§r§a<§rNurse§a>",
+  "npc.adelyn": "§r§a<§rAdelyn§a>",
+  "npc.andreine": "§r§a<§rAndreine§a>",
+  "mob.cardophyte": "§r§c<§rCardophyte§c>",
   "subtitles.mob.cardophyte.hurt": "Cardophyte hurts",
   "subtitles.mob.cardophyte.death": "Cardophyte dies",
-  "mob.talpid": "§r§cTalpid",
-  "mob.baby_talpid": "§r§cBaby Talpid"
+  "mob.talpid": "§r§c<§rTalpid§c>",
+  "mob.baby_talpid": "§r§c<§rBaby Talpid§c>"
 }

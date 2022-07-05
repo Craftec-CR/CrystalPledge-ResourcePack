@@ -1,0 +1,7 @@
+{
+  "warning_suppressions": {
+        "file": [
+            "assets/minecraft/models/block/chain.json"
+        ]
+  }
+}

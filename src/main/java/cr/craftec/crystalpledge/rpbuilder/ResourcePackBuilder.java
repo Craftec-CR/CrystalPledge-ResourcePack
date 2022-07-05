@@ -18,10 +18,11 @@ public class ResourcePackBuilder {
     private static final String CRYSTAL_PLEDGE_ZIP = "CrystalPledge.zip";
     private static final String VANILLA_TWEAKS = "VanillaTweaks.zip";
     private static final String NEGATIVE_SPACE = "NegativeSpaceFont.zip";
-    private static final String WARNING_SUPRESSIONS = "warning_suppressions.json";
+    private static final String CONFIG = "config.json";
     private static final List<String> mainFiles = List.of("LICENSE.txt",
                                                           "pack.mcmeta",
                                                           "pack.png");
+    private static JsonObject config;
     private static final Map<WarningType,List<String>> warningSuppressions = new HashMap<>();
 
     private static final Map<Path,JsonObject> langs = new HashMap<>();
@@ -49,30 +50,32 @@ public class ResourcePackBuilder {
             return;
         }
 
-        // Parse warning supressions
-        File supressionsFile = new File(WARNING_SUPRESSIONS);
-        if (supressionsFile.exists()) {
-            JsonObject supressionsObject = null;
-            try (InputStreamReader reader = new InputStreamReader(new FileInputStream(supressionsFile))) {
-                supressionsObject = JsonParser.parseReader(reader).getAsJsonObject();
-            } catch (MalformedJsonException | IllegalStateException ignored) {
-                warn(WarningType.INVALID, WARNING_SUPRESSIONS, null);
+        File configFile = new File(CONFIG);
+        if (!configFile.exists()) {
+            // Save default config
+            try (InputStream in = ResourcePackBuilder.class.getClassLoader().getResourceAsStream(CONFIG);
+                 OutputStream out = new FileOutputStream(configFile)) {
+                out.write(in.readAllBytes());
             }
-            if (supressionsObject != null) {
-                for (Map.Entry<String,JsonElement> entry : supressionsObject.entrySet()) {
-                    String key = entry.getKey();
-                    List<String> suppressions = new LinkedList<>();
-                    try {
-                        WarningType warningType = WarningType.valueOf(key.toUpperCase());
-                        JsonArray array = entry.getValue().getAsJsonArray();
-                        for (JsonElement jsonElement : array) { suppressions.add(jsonElement.getAsString()); }
-                        warningSuppressions.put(warningType, suppressions);
-                    } catch (IllegalArgumentException | IllegalStateException e) {
-                        warn(WarningType.INVALID, WARNING_SUPRESSIONS, "key \""+key+"\"");
-                    }
-                }
+        }
+        // Load config
+        try (InputStreamReader reader = new InputStreamReader(new FileInputStream(configFile))) {
+            config = JsonParser.parseReader(reader).getAsJsonObject();
+        } catch (MalformedJsonException | IllegalStateException ignored) {
+            warn(WarningType.INVALID, CONFIG, null);
+        }
+        // Load warning suppressions
+        for (Map.Entry<String,JsonElement> entry : config.getAsJsonObject("warning_suppressions").entrySet()) {
+            String key = entry.getKey();
+            List<String> suppressions = new LinkedList<>();
+            try {
+                WarningType warningType = WarningType.valueOf(key.toUpperCase());
+                JsonArray array = entry.getValue().getAsJsonArray();
+                for (JsonElement jsonElement : array) { suppressions.add(jsonElement.getAsString()); }
+                warningSuppressions.put(warningType, suppressions);
+            } catch (IllegalArgumentException | IllegalStateException e) {
+                warn(WarningType.INVALID, CONFIG, "key \""+key+"\"");
             }
-
         }
 
         deleteFile(new File("temp"));

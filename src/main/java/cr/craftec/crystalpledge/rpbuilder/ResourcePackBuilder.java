@@ -78,10 +78,8 @@ public class ResourcePackBuilder {
             }
         }
 
-        deleteFile(new File("temp"));
-        Path temp = Path.of("temp");
-        temp.toFile().mkdir();
-        Runtime.getRuntime().exec("attrib +H temp");
+        Path temp = Files.createTempDirectory("CrystalPledgeRP");
+        deleteFile(temp.toFile());
 
         try {
             File zip = new File(CRYSTAL_PLEDGE_ZIP);

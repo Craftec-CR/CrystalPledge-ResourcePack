@@ -10,7 +10,7 @@
 		{"predicate":{"custom_model_data":3},"model": "crystalpledge:item/shielder_headset"},
 		{"predicate":{"custom_model_data":4},"model": "crystalpledge:item/blade_dancer_headset"},
 		{"predicate":{"custom_model_data":5},"model": "crystalpledge:item/berserker_headset"},
-		{"predicate":{"custom_model_data":7},"model": "crystalpledge:item/herbalist_headset"},
+		{"predicate":{"custom_model_data":7},"model": "crystalpledge:item/medicinal_herbalist_headset"},
 		{"predicate":{"custom_model_data":100},"model": "crystalpledge:item/explorer_headset"}
 	]
 }

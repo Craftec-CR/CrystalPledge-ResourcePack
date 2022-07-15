@@ -1,0 +1,5 @@
+{
+    "parent": "crystalpledge:player/steve/left_leg",
+    "textures": {
+        "0": "crystalpledge:npc/old_man"
+}

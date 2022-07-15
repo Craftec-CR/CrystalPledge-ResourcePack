@@ -11,6 +11,20 @@
                 "\uE010\uE011\uE012\uE013\uE014\uE015\uE016\uE017",
                 "\uE018\uE019\uE01A\uE01B\uE01C\uE01D\uE01E\uE01F"
             ]
+        },
+        {
+            "type": "bitmap",
+            "file": "crystalpledge:gui/effects/bleeding.png",
+            "ascent": -14,
+            "height": 10,
+            "chars": ["\uE020"]
+        },
+        {
+            "type": "bitmap",
+            "file": "crystalpledge:gui/effects/venom.png",
+            "ascent": -14,
+            "height": 10,
+            "chars": ["\uE021"]
         }
-    ]
+    ],
 }

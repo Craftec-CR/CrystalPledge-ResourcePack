@@ -5,7 +5,7 @@
         "layer0": "item/wooden_sword"
     },
     "overrides": [
-        {"predicate":{"custom_model_data":1},"model":"crystalpledge:item/scalpel"},
+        {"predicate":{"custom_model_data":2},"model":"crystalpledge:item/scalpel"},
         {"predicate":{"custom_model_data":100},"model":"crystalpledge:item/mech_sword"},
         {"predicate":{"custom_model_data":10000},"model":"crystalpledge:item/cyber_sword"}
     ]

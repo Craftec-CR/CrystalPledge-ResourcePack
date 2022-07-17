@@ -75,24 +75,17 @@
         },
         {
             "type": "bitmap",
-            "file": "crystalpledge:gui/shield.png",
-            "ascent": -39,
-            "height": 12,
-            "chars": ["\uE080"]
-        },
-        {
-            "type": "bitmap",
-            "file": "crystalpledge:gui/broken_shield.png",
-            "ascent": -39,
-            "height": 12,
-            "chars": ["\uE081"]
+            "file": "crystalpledge:gui/heart.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["\uE053"]
         },
         {
             "type": "bitmap",
             "file": "crystalpledge:color/black.png",
             "ascent": 175,
             "height": 350,
-            "chars": ["\uE082"]
+            "chars": ["\uE054"]
         }
     ]
 }

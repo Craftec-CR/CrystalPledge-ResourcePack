@@ -1,0 +1,10 @@
+{
+  "comment": "Swords and Shields",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/scute"
+  },
+  "overrides": [
+    {"predicate":{"custom_model_data":1},"model":"crystalpledge:item/training_sword_and_shield"}
+  ]
+}

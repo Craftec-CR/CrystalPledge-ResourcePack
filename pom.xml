@@ -15,6 +15,7 @@
     </properties>
 
     <build>
+        <directory>${java.io.tmpdir}/maven-target/</directory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

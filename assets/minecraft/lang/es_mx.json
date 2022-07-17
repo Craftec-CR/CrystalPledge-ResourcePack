@@ -97,7 +97,19 @@
   "grammar.comma": "§r, ",
   
   "role.fugitive": "§r§7Fugitivo",
-  "role.warrior": "§r§6Guerrere",
+  "role.warrior": "§r§6Guerrero",
+  "role.shielder": "§r§6Escudero",
+  "role.blade_dancer": "§r§6Danzarín de la Hoja",
+  "role.berserker": "§r§6Berserker",
+  "role.herborist": "§r§aHerborista",
+  "role.medicinal_herbalist": "§r§aHerbalista",
+  "role.homeopath": "§r§aHomeópata",
+  "role.toxicist": "§r§aToxicista",
+  "role.elemental": "§r§dElemental",
+  "role.scout": "§r§9Explorador",
+  "role.archer": "§r§9Arquero",
+  "role.tactician": "§r§9Táctico",
+  "role.assasin": "§r§9Asesino",
   
   "item.crystalpledge.equippable_by": "§r§bEquipable por: ",
   "item.crystalpledge.ammoclass": "§r§7Munición",
@@ -156,7 +168,6 @@
   "item.crystalpledge.cassiterite": "Casiterita",
   "item.crystalpledge.tin_ingot": "Lingote de Estaño",
   "item.crystalpledge.hobermanite": "Hobermanita",
-  "item.crystalpledge.copper_ingot": "Lingote de Cobre",
   "item.crystalpledge.steel_ingot": "Lingote de Acero",
   "item.crystalpledge.soulpad": "Soulpad",
   

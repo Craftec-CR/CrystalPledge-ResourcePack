@@ -14,7 +14,6 @@
         {"predicate":{"custom_model_data":7},"model":"crystalpledge:item/casiterite"},
         {"predicate":{"custom_model_data":8},"model":"crystalpledge:item/tin_ingot"},
         {"predicate":{"custom_model_data":9},"model":"crystalpledge:item/hobermanite"},
-        {"predicate":{"custom_model_data":10},"model":"crystalpledge:item/copper_ingot"},
         {"predicate":{"custom_model_data":11},"model":"crystalpledge:item/steel_ingot"}
     ]
 }

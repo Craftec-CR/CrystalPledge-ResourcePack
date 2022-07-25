@@ -1,5 +1,5 @@
 {
-  "langs": [ "es_ar", "es_cl", "es_ec", "es_es", "es_mx", "es_uy", "es_ve"],
+  "langs": ["es_ar", "es_cl", "es_ec", "es_es", "es_mx", "es_uy", "es_ve"],
 
   "itemGroup.buildingBlocks": "§r§7Construcci\u00f3n",
   "itemGroup.decorations": "§r§7Decoraci\u00f3n",
@@ -84,6 +84,7 @@
   "block.minecraft.diamond_ore": "Mineral de Cristal PEM",
   "block.minecraft.sea_lantern": "Linterna PEM",
 
+  "attribute.base": "§r%s §rbase",
   "attribute.name.range": "§rRango",
   "attribute.name.weapon_damage": "§rDaño de Arma",
   "attribute.name.bleeding_chance": "§rProbabilidad de Sangrado",
@@ -99,7 +100,6 @@
   "menu.headset": "§r§7Headsets %s",
   "menu.headset.already_equipped": "%s§r§7 [Ya Equipado]",
   "menu.headset.click": "§r§e[%s§r§e]§r: Equipar",
-  "menu.headset.equipped": "§r%s §r§aeqpuipado",
   "menu.headset.drop": "§r§e[%s§r§e]§r: §4Destruir",
   "menu.headset.drop_confirm": "§r§c¿De verdad quieres destruir este Headset? Esta acci\u00f3n no se puede deshacer\n%s %s",
   "menu.headset.dropped": "§r%s §r§aDestruido",
@@ -125,6 +125,7 @@
   "item.crystalpledge.level": "§r§bNv. %s",
   "item.crystalpledge.ammoclass": "§r§7Munici\u00f3n",
   "item.crystalpledge.headsetclass": "§r§bHeadset",
+  "item.crystalpledge.headset.equipped": "§r%s §r§aequipado",
   "item.crystalpledge.headset.empty_slot": "§r§cTu inventario est\u00e1 muy lleno como para cambiar tu headset",
   "item.crystalpledge.warrior_headset": "§6Headset de Guerrero",
   "item.crystalpledge.swordclass": "§r§6Espada §r§b(Arma)",
@@ -142,8 +143,8 @@
   "item.crystalpledge.greatswordclass": "§r§6Mandoble §r§b(Arma)",
   "item.crystalpledge.training_greatsword": "§r§7Mandoble de entrenamiento",
   "item.crystalpledge.herborist_headset": "§6Headset de Herborista",
-  "item.crystalpledge.handgunclass": "§r§aPistola §r§b(Arma)",
-  "item.crystalpledge.training_handgun": "§r§7Pistola de entrenamiento",
+  "item.crystalpledge.pistolclass": "§r§aPistola §r§b(Arma)",
+  "item.crystalpledge.training_pistol": "§r§7Pistola de entrenamiento",
   "item.crystalpledge.medicinal_herbalist_headset": "§6Headset de Herbalista Medicinal",
   "item.crystalpledge.sniperclass": "§r§aFrancotirador §r§b(Arma)",
   "item.crystalpledge.training_sniper": "§r§7Francotirador de entrenamiento",

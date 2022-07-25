@@ -5,7 +5,7 @@
         "layer0": "item/carrot_on_a_stick"
     },
 	"overrides": [
-		{"predicate":{"custom_model_data":1,"damage":0},"model": "crystalpledge:item/soxhlet_gun"},
-		{"predicate":{"custom_model_data":1,"damage":0.5},"model": "crystalpledge:item/soxhlet_gun_aiming"}
+		{"predicate":{"custom_model_data":1,"damage":0},"model": "crystalpledge:item/training_pistol"},
+		{"predicate":{"custom_model_data":1,"damage":0.5},"model": "crystalpledge:item/training_pistol_aiming"}
 	]
 }

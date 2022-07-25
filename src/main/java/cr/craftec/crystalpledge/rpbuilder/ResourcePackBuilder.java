@@ -137,7 +137,7 @@ public class ResourcePackBuilder {
                 File langFile = path.toFile();
                 makeParent(langFile);
                 try (Writer writer = new FileWriter(langFile)) {
-                    writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(entry.getValue()));
+                    writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(entry.getValue()).replace("\\\\", "\\"));
                 }
             }
             for (Map.Entry<Path,JsonObject> entry : fonts.entrySet()) {
@@ -153,7 +153,7 @@ public class ResourcePackBuilder {
                 File soundFile = path.toFile();
                 makeParent(soundFile);
                 try (Writer writer = new FileWriter(soundFile)) {
-                    writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(entry.getValue()));
+                    writer.write(new GsonBuilder().setPrettyPrinting().create().toJson(entry.getValue()).replace("\\\\", "\\"));
                 }
             }
 
@@ -224,17 +224,14 @@ public class ResourcePackBuilder {
         // Lang files
         if (path.startsWith("assets\\minecraft\\lang")) {
             try {
-                JsonObject sourceLang;
-                try (Reader reader = new InputStreamReader(in)) {
-                    sourceLang = JsonParser.parseReader(reader).getAsJsonObject();
-                }
+                JsonObject sourceLang = JsonParser.parseString(new String(in.readAllBytes()).replace("\\", "\\\\")).getAsJsonObject();
                 JsonArray langs = sourceLang.getAsJsonArray("langs");
                 if (langs == null) {
                     JsonObject masterLang = ResourcePackBuilder.langs.get(path);
                     if (masterLang == null) {
                         if (file.exists()) {
-                            try (Reader existingReader = new InputStreamReader(new FileInputStream(file))) {
-                                masterLang = JsonParser.parseReader(existingReader).getAsJsonObject();
+                            try (InputStream inputStream = new FileInputStream(file)) {
+                                masterLang = JsonParser.parseString(new String(inputStream.readAllBytes()).replace("\\", "\\\\")).getAsJsonObject();
                             } catch (IllegalStateException | MalformedJsonException e) {
                                 warn(WarningType.INVALID, file.toString(), null);
                                 return;
@@ -329,8 +326,8 @@ public class ResourcePackBuilder {
                     JsonObject masterSounds = sounds.get(path);
                     if (masterSounds == null) {
                         if (file.exists()) {
-                            try (Reader existingReader = new InputStreamReader(new FileInputStream(file))) {
-                                masterSounds = JsonParser.parseReader(existingReader).getAsJsonObject();
+                            try (InputStream inputStream = new FileInputStream(file)) {
+                                masterSounds = JsonParser.parseString(new String(inputStream.readAllBytes()).replace("\\", "\\\\")).getAsJsonObject();
                             } catch (IllegalStateException | MalformedJsonException e) {
                                 warn(WarningType.INVALID, file.toString(), null);
                                 return;
@@ -341,10 +338,7 @@ public class ResourcePackBuilder {
                         }
                         sounds.put(path, masterSounds);
                     }
-                    JsonObject newSounds;
-                    try (Reader reader = new InputStreamReader(in)) {
-                        newSounds = JsonParser.parseReader(reader).getAsJsonObject();
-                    }
+                    JsonObject newSounds = JsonParser.parseString(new String(in.readAllBytes()).replace("\\", "\\\\")).getAsJsonObject();
                     for (Map.Entry<String,JsonElement> soundEntry : newSounds.entrySet()) {
                         String soundId = soundEntry.getKey();
                         if (masterSounds.has(soundId)) {

@@ -1,13 +1,5 @@
 {
-  "langs": [
-    "en_au",
-    "en_ca",
-    "en_gb",
-    "en_nz",
-    "en_pt",
-    "en_ud",
-    "en_us"
-  ],
+  "langs": ["en_au", "en_ca", "en_gb", "en_nz", "en_pt", "en_ud", "en_us"],
 
   "itemGroup.buildingBlocks": "§r§7Building Blocks",
   "itemGroup.decorations": "§r§7Decoration Blocks",
@@ -75,6 +67,9 @@
   "merchant.level.5": "§r§7Master",
   "merchant.trades": "§r§7Trades",
   
+  "key.mouse.left": "Left Click",
+  "key.mouse.right": "Right Click",
+  
   "jigsaw_block.pool": "Target Pool:",
   "jigsaw_block.name": "Attachment Type:",
   "jigsaw_block.target": "Ignored",
@@ -94,7 +89,22 @@
   "attribute.name.bleeding_chance": "§rBleeding Chance",
   "attribute.name.attack_speed": "§rAttack Speed",
   
-  "grammar.comma": "§r, ",
+  "grammar.comma": "§r, %s",
+  
+  "menu.previous_page": "§r§e[Previous page]",
+  "menu.next_page": "§r§e[Next page]",
+  "menu.confirm": "[Confirm]",
+  "menu.cancel": "[Cancel]",
+  "menu.cancelled": "§r§cAction cancelled",
+  "menu.headset": "§r§7Headsets %s",
+  "menu.headset.already_equipped": "%s§r§7 [Already Equipped]",
+  "menu.headset.click": "§r§e[%s§r§e]§r: Equip",
+  "menu.headset.equipped": "§r§aEquipped §r%s",
+  "menu.headset.drop": "§r§e[%s§r§e]§r: §4Destroy",
+  "menu.headset.drop_confirm": "§r§cAre you sure you want to destroy this headset? This action cannot be undone\n%s %s",
+  "menu.headset.dropped": "§r%s §r§aDestroyed",
+  "menu.headset.cannot_drop": "§r§cYou must first unequip this Headset in order to destroy it",
+  "menu.headset.locked": "§r§e[Go to Shop]",
   
   "role.fugitive": "§r§7Fugitive",
   "role.warrior": "§r§6Warrior",
@@ -111,7 +121,8 @@
   "role.tactician": "§r§9Tactician",
   "role.assasin": "§r§9Assasin",
   
-  "item.crystalpledge.equippable_by": "§r§bEquippable by: ",
+  "item.crystalpledge.equippable_by": "§r§bEquippable by: %s",
+  "item.crystalpledge.level": "§r§bLv. %s",
   "item.crystalpledge.ammoclass": "§r§7Ammo",
   "item.crystalpledge.headsetclass": "§r§bHeadset",
   "item.crystalpledge.headset.empty_slot": "§r§cYour inventory is too full to change your headset",

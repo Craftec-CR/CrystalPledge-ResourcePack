@@ -85,10 +85,13 @@
   "block.minecraft.sea_lantern": "EMP Lantern",
   
   "attribute.base": "§r%s §rbase",
-  "attribute.name.range": "§rRange",
   "attribute.name.weapon_damage": "§rWeapon Damage",
   "attribute.name.bleeding_chance": "§rBleeding Chance",
+  "attribute.name.range": "§rRange",
   "attribute.name.attack_speed": "§rAttack Speed",
+  "attribute.name.shield": "§rShield",
+  "attribute.name.projectile_speed": "§rProjectile Speed",
+  "attribute.name.pierce": "§rPierce",
   
   "grammar.comma": "§r, %s",
   
@@ -123,6 +126,7 @@
   
   "item.crystalpledge.equippable_by": "§r§bEquippable by: %s",
   "item.crystalpledge.level": "§r§bLv. %s",
+  "item.crystalpledge.projectileclass": "§r§7Projectile",
   "item.crystalpledge.ammoclass": "§r§7Ammo",
   "item.crystalpledge.headsetclass": "§r§bHeadset",
   "item.crystalpledge.headset.equipped": "§r§aEquipped §r%s",

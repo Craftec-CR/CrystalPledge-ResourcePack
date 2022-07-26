@@ -85,10 +85,13 @@
   "block.minecraft.sea_lantern": "Linterna PEM",
 
   "attribute.base": "§r%s §rbase",
-  "attribute.name.range": "§rRango",
   "attribute.name.weapon_damage": "§rDaño de Arma",
   "attribute.name.bleeding_chance": "§rProbabilidad de Sangrado",
+  "attribute.name.range": "§rRango",
   "attribute.name.attack_speed": "§rVelocidad de Ataque",
+  "attribute.name.shield": "§rEscudo",
+  "attribute.name.projectile_speed": "§rRapidez de Proyectil",
+  "attribute.name.pierce": "§rPenetraci\u00f3n",
   
   "grammar.comma": "§r, %s",
   
@@ -123,6 +126,7 @@
   
   "item.crystalpledge.equippable_by": "§r§bEquipable por: %s",
   "item.crystalpledge.level": "§r§bNv. %s",
+  "item.crystalpledge.projectileclass": "§r§7Proyectil",
   "item.crystalpledge.ammoclass": "§r§7Munici\u00f3n",
   "item.crystalpledge.headsetclass": "§r§bHeadset",
   "item.crystalpledge.headset.equipped": "§r%s §r§aequipado",

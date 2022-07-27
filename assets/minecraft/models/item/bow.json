@@ -31,8 +31,8 @@
         {"predicate": {"pulling": 1, "pull": 0.65}, "model": "item/bow_pulling_1"},
         {"predicate": {"pulling": 1, "pull": 0.9}, "model": "item/bow_pulling_2"},
 
-        {"predicate": {"custom_model_data":1}, "model": "crystalpledge:item/bow"},
-        {"predicate": {"custom_model_data":1, "pulling": 1, "pull": 0.2}, "model": "crystalpledge:item/bow_pulling_0"},
-        {"predicate": {"custom_model_data":1, "pulling": 1, "pull": 0.9}, "model": "crystalpledge:item/bow_pulling_1"}
+        {"predicate": {"custom_model_data":1}, "model": "crystalpledge:item/training_slingshot"},
+        {"predicate": {"custom_model_data":1, "pulling": 1}, "model": "crystalpledge:item/training_slingshot_pulling_0"},
+        {"predicate": {"custom_model_data":1, "pulling": 1, "pull": 0.9}, "model": "crystalpledge:item/training_slingshot_pulling_1"}
     ]
 }

@@ -40,11 +40,5 @@
     "sounds": [
       "crystalpledge:empty"
     ]
-  },
-  "entity.slime.death": {
-    "replace": "true",
-    "sounds": [
-      "crystalpledge:empty"
-    ]
   }
 }

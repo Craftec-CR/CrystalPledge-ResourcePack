@@ -1,0 +1,27 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "crystalpledge:item/training_greatsword"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-33.5, -90, 0],
+			"translation": [0, 9.5, 4.25],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [56.5, -90, 0],
+			"translation": [0, 9.5, 4.25],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, 6, 2.25]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -25],
+			"translation": [1.13, 6, 2.25]
+		}
+	}
+}

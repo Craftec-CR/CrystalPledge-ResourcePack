@@ -6,6 +6,7 @@
     },
     "overrides": [
         {"predicate":{"custom_model_data":2},"model":"crystalpledge:item/scalpel"},
+        {"predicate":{"custom_model_data":3},"model":"crystalpledge:item/training_greatsword"},
         {"predicate":{"custom_model_data":100},"model":"crystalpledge:item/mech_sword"},
         {"predicate":{"custom_model_data":10000},"model":"crystalpledge:item/cyber_sword"}
     ]

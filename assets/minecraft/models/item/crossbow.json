@@ -32,6 +32,7 @@
         {"predicate": {"pulling": 1,"pull": 1.0},"model": "item/crossbow_pulling_2"},
         {"predicate": {"charged": 1},"model": "item/crossbow_arrow"},
         {"predicate": {"charged": 1,"firework": 1},"model": "item/crossbow_firework"},
-		{"predicate":{"custom_model_data":1},"model": "crystalpledge:item/training_pistol"}
+		{"predicate":{"custom_model_data":1},"model": "crystalpledge:item/training_pistol"},
+		{"predicate":{"custom_model_data":2},"model": "crystalpledge:item/training_sniper"}
     ]
 }

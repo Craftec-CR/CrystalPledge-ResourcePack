@@ -6,6 +6,8 @@
     },
 	"overrides": [
 		{"predicate":{"custom_model_data":1,"damage":0},"model": "crystalpledge:item/training_pistol"},
-		{"predicate":{"custom_model_data":1,"damage":0.5},"model": "crystalpledge:item/training_pistol_aiming"}
+		{"predicate":{"custom_model_data":1,"damage":0.5},"model": "crystalpledge:item/training_pistol_aiming"},
+		{"predicate":{"custom_model_data":2,"damage":0},"model": "crystalpledge:item/training_sniper"},
+		{"predicate":{"custom_model_data":2,"damage":0.5},"model": "crystalpledge:item/training_sniper_aiming"}
 	]
 }

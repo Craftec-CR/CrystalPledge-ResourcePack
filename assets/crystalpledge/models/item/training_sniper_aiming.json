@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+    "parent": "crystalpledge:item/training_sniper",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -15, 0],
+			"translation": [2, 4.5, -4],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -15, 0],
+			"translation": [2, 4.5, -4],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"translation": [-9, 9.5, 1.13]
+		},
+		"firstperson_lefthand": {
+			"translation": [-9.1, 9.5, 1.13]
+		}
+	}
+}

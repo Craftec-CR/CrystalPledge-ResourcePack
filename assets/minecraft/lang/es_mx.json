@@ -90,6 +90,7 @@
   "attribute.name.range": "§rRango",
   "attribute.name.attack_speed": "§rVelocidad de Ataque",
   "attribute.name.shield": "§rEscudo",
+  "attribute.name.ammo": "§rMunición",
   "attribute.name.projectile_speed": "§rRapidez de Proyectil",
   "attribute.name.pierce": "§rPenetraci\u00f3n",
   
@@ -126,8 +127,12 @@
   
   "item.crystalpledge.equippable_by": "§r§bEquipable por: %s",
   "item.crystalpledge.level": "§r§bNv. %s",
-  "item.crystalpledge.projectileclass": "§r§7Proyectil",
-  "item.crystalpledge.ammoclass": "§r§7Munici\u00f3n",
+  "item.crystalpledge.projectileclass": "§r§bProyectil",
+  "item.crystalpledge.ammoclass": "§r§bMunici\u00f3n",
+  "item.crystalpledge.arrow": "§r§7Flecha",
+  "item.crystalpledge.dual_dart": "§r§7Dardo Dual",
+  "item.crystalpledge.dual_dart.0": "§r§7Un dardo que da\u00f1a enemigos",
+  "item.crystalpledge.dual_dart.1": "§r§7y sana aliados por igual",
   "item.crystalpledge.headsetclass": "§r§bHeadset",
   "item.crystalpledge.headset.equipped": "§r%s §r§aequipado",
   "item.crystalpledge.headset.empty_slot": "§r§cTu inventario est\u00e1 muy lleno como para cambiar tu headset",

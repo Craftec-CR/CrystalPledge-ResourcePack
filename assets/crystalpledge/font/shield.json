@@ -3,7 +3,7 @@
         {
             "type": "bitmap",
             "file": "minecraft:font/ascii.png",
-            "ascent": -18,
+            "ascent": -17,
             "height": 6,
             "chars": [
                 "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
@@ -27,7 +27,7 @@
         {
             "type": "bitmap",
             "file": "crystalpledge:gui/shield_bar.png",
-            "ascent": -16,
+            "ascent": -15,
             "height": 9,
             "chars": [
                 "\uE001\uE002\uE003",
@@ -62,14 +62,14 @@
         {
             "type": "bitmap",
             "file": "crystalpledge:gui/shield.png",
-            "ascent": -16,
+            "ascent": -15,
             "height": 9,
             "chars": ["\uE052"]
         },
         {
             "type": "bitmap",
             "file": "crystalpledge:gui/broken_shield.png",
-            "ascent": -16,
+            "ascent": -15,
             "height": 9,
             "chars": ["\uE053"]
         }

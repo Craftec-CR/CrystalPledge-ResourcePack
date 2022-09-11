@@ -1,7 +1,17 @@
 {
   "warning_suppressions": {
-        "file": [
-            "assets/minecraft/models/block/chain.json"
-        ]
-  }
+    "file": [
+      "assets/minecraft/models/block/chain.json",
+      "assets/minecraft/models/block/lapisdemon/bonus/mushroomblocks/007.json",
+      "assets/minecraft/models/block/lapisdemon/bonus/mushroomblocks/008.json",
+      "assets/minecraft/models/block/lapisdemon/bonus/mushroomblocks/009.json",
+      "assets/minecraft/models/block/lapisdemon/bonus/mushroomblocks/010.json",
+      "assets/minecraft/blockstates/brown_mushroom_block.json",
+      "assets/minecraft/blockstates/mushroom_stem.json",
+      "assets/minecraft/blockstates/red_mushroom_block.json"
+    ]
+  },
+  "vanilla_tweaks": "lib/VanillaTweaks.zip",
+  "negative_space": "lib/NegativeSpaceFont.zip",
+  "bonus_mushroom_blocks": "lib/BONUS Mushroom Blocks.zip"
 }

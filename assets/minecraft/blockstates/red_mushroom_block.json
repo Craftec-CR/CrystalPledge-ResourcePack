@@ -1,69 +1,197 @@
 {
-	"multipart":[
-		{"when":{"down":false,"east":false,"north":false,"south":false,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_false"}},
-		{"when":{"down":false,"east":false,"north":false,"south":false,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_1"}},
-		{"when":{"down":false,"east":false,"north":false,"south":false,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_2"}},
-		{"when":{"down":false,"east":false,"north":false,"south":true,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_3"}},
-		{"when":{"down":false,"east":false,"north":false,"south":true,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_4"}},
-		{"when":{"down":false,"east":false,"north":false,"south":true,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_5"}},
-		{"when":{"down":false,"east":false,"north":false,"south":true,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_6"}},
-		{"when":{"down":false,"east":false,"north":true,"south":false,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_7"}},
-		{"when":{"down":false,"east":false,"north":true,"south":false,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_8"}},
-		{"when":{"down":false,"east":false,"north":true,"south":false,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_9"}},
-		{"when":{"down":false,"east":false,"north":true,"south":false,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_10"}},
-		{"when":{"down":false,"east":true,"north":false,"south":false,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_11"}},
-		{"when":{"down":false,"east":true,"north":false,"south":false,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_12"}},
-		{"when":{"down":false,"east":true,"north":false,"south":true,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_13"}},
-		{"when":{"down":false,"east":true,"north":false,"south":true,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_14"}},
-		{"when":{"down":false,"east":true,"north":true,"south":false,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_15"}},
-		{"when":{"down":false,"east":true,"north":true,"south":false,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_16"}},
-		{"when":{"down":false,"east":false,"north":false,"south":false,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_17"}},		
-		{"when":{"down":true,"east":true,"north":true,"south":true,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_true"}},
-
-		{"when":{"down":false,"east":false,"north":true,"south":true,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/055"}},
-		{"when":{"down":false,"east":false,"north":true,"south":true,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/056"}},
-		{"when":{"down":false,"east":false,"north":true,"south":true,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/057"}},
-		{"when":{"down":false,"east":false,"north":true,"south":true,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/058"}},
-		{"when":{"down":false,"east":true,"north":false,"south":false,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/059"}},
-		{"when":{"down":false,"east":true,"north":false,"south":false,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/060"}},
-		{"when":{"down":false,"east":true,"north":false,"south":true,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/061"}},
-		{"when":{"down":false,"east":true,"north":false,"south":true,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/062"}},
-		{"when":{"down":false,"east":true,"north":true,"south":false,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/063"}},
-		{"when":{"down":false,"east":true,"north":true,"south":false,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/064"}},
-		{"when":{"down":false,"east":true,"north":true,"south":true,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/065"}},
-		{"when":{"down":false,"east":true,"north":true,"south":true,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/066"}},
-		{"when":{"down":false,"east":true,"north":true,"south":true,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/067"}},
-		{"when":{"down":false,"east":true,"north":true,"south":true,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/068"}},
-		{"when":{"down":true,"east":false,"north":false,"south":false,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/069"}},
-		{"when":{"down":true,"east":false,"north":false,"south":false,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/070"}},
-		{"when":{"down":true,"east":false,"north":false,"south":false,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/071"}},
-		{"when":{"down":true,"east":false,"north":false,"south":false,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/072"}},
-		{"when":{"down":true,"east":false,"north":false,"south":true,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/073"}},
-		{"when":{"down":true,"east":false,"north":false,"south":true,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/074"}},
-		{"when":{"down":true,"east":false,"north":false,"south":true,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/075"}},
-		{"when":{"down":true,"east":false,"north":false,"south":true,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/076"}},
-		{"when":{"down":true,"east":false,"north":true,"south":false,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/077"}},
-		{"when":{"down":true,"east":false,"north":true,"south":false,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/078"}},
-		{"when":{"down":true,"east":false,"north":true,"south":false,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/079"}},
-		{"when":{"down":true,"east":false,"north":true,"south":false,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/080"}},
-		{"when":{"down":true,"east":false,"north":true,"south":true,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/081"}},
-		{"when":{"down":true,"east":false,"north":true,"south":true,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/082"}},
-		{"when":{"down":true,"east":false,"north":true,"south":true,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/083"}},
-		{"when":{"down":true,"east":false,"north":true,"south":true,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/084"}},
-		{"when":{"down":true,"east":true,"north":false,"south":false,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/085"}},
-		{"when":{"down":true,"east":true,"north":false,"south":false,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/086"}},
-		{"when":{"down":true,"east":true,"north":false,"south":false,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/087"}},
-		{"when":{"down":true,"east":true,"north":false,"south":false,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/088"}},
-		{"when":{"down":true,"east":true,"north":false,"south":true,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/089"}},
-		{"when":{"down":true,"east":true,"north":false,"south":true,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/090"}},
-		{"when":{"down":true,"east":true,"north":false,"south":true,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/091"}},
-		{"when":{"down":true,"east":true,"north":false,"south":true,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/092"}},
-		{"when":{"down":true,"east":true,"north":true,"south":false,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/093"}},
-		{"when":{"down":true,"east":true,"north":true,"south":false,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/094"}},
-		{"when":{"down":true,"east":true,"north":true,"south":false,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/095"}},
-		{"when":{"down":true,"east":true,"north":true,"south":false,"up":true,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/096"}},
-		{"when":{"down":true,"east":true,"north":true,"south":true,"up":false,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/097"}},
-		{"when":{"down":true,"east":true,"north":true,"south":true,"up":false,"west":true},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/098"}},
-		{"when":{"down":true,"east":true,"north":true,"south":true,"up":true,"west":false},"apply":{"model":"block/lapisdemon/bonus/mushroomblocks/099"}}
-	]
+  "variants": {
+    "down=false,east=false,north=false,south=false,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_false"
+    },
+    "down=false,east=false,north=false,south=false,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_1"
+    },
+    "down=false,east=false,north=false,south=false,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_2"
+    },
+    "down=false,east=false,north=false,south=true,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_3"
+    },
+    "down=false,east=false,north=false,south=true,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_4"
+    },
+    "down=false,east=false,north=false,south=true,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_5"
+    },
+    "down=false,east=false,north=false,south=true,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_6"
+    },
+    "down=false,east=false,north=true,south=false,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_7"
+    },
+    "down=false,east=false,north=true,south=false,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_8"
+    },
+    "down=false,east=false,north=true,south=false,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_9"
+    },
+    "down=false,east=false,north=true,south=false,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_10"
+    },
+    "down=false,east=true,north=false,south=false,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_11"
+    },
+    "down=false,east=true,north=false,south=false,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_12"
+    },
+    "down=false,east=true,north=false,south=true,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_13"
+    },
+    "down=false,east=true,north=false,south=true,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_14"
+    },
+    "down=false,east=true,north=true,south=false,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_15"
+    },
+    "down=false,east=true,north=true,south=false,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_16"
+    },
+    "down=false,east=false,north=false,south=false,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_17"
+    },
+    "down=true,east=true,north=true,south=true,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/survival/red_mushroom_block_survival_true"
+    },
+    "down=false,east=false,north=true,south=true,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/055"
+    },
+    "down=false,east=false,north=true,south=true,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/056"
+    },
+    "down=false,east=false,north=true,south=true,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/057"
+    },
+    "down=false,east=false,north=true,south=true,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/058"
+    },
+    "down=false,east=true,north=false,south=false,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/059"
+    },
+    "down=false,east=true,north=false,south=false,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/060"
+    },
+    "down=false,east=true,north=false,south=true,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/061"
+    },
+    "down=false,east=true,north=false,south=true,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/062"
+    },
+    "down=false,east=true,north=true,south=false,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/063"
+    },
+    "down=false,east=true,north=true,south=false,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/064"
+    },
+    "down=false,east=true,north=true,south=true,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/065"
+    },
+    "down=false,east=true,north=true,south=true,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/066"
+    },
+    "down=false,east=true,north=true,south=true,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/067"
+    },
+    "down=false,east=true,north=true,south=true,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/068"
+    },
+    "down=true,east=false,north=false,south=false,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/069"
+    },
+    "down=true,east=false,north=false,south=false,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/070"
+    },
+    "down=true,east=false,north=false,south=false,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/071"
+    },
+    "down=true,east=false,north=false,south=false,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/072"
+    },
+    "down=true,east=false,north=false,south=true,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/073"
+    },
+    "down=true,east=false,north=false,south=true,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/074"
+    },
+    "down=true,east=false,north=false,south=true,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/075"
+    },
+    "down=true,east=false,north=false,south=true,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/076"
+    },
+    "down=true,east=false,north=true,south=false,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/077"
+    },
+    "down=true,east=false,north=true,south=false,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/078"
+    },
+    "down=true,east=false,north=true,south=false,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/079"
+    },
+    "down=true,east=false,north=true,south=false,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/080"
+    },
+    "down=true,east=false,north=true,south=true,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/081"
+    },
+    "down=true,east=false,north=true,south=true,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/082"
+    },
+    "down=true,east=false,north=true,south=true,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/083"
+    },
+    "down=true,east=false,north=true,south=true,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/084"
+    },
+    "down=true,east=true,north=false,south=false,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/085"
+    },
+    "down=true,east=true,north=false,south=false,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/086"
+    },
+    "down=true,east=true,north=false,south=false,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/087"
+    },
+    "down=true,east=true,north=false,south=false,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/088"
+    },
+    "down=true,east=true,north=false,south=true,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/089"
+    },
+    "down=true,east=true,north=false,south=true,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/090"
+    },
+    "down=true,east=true,north=false,south=true,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/091"
+    },
+    "down=true,east=true,north=false,south=true,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/092"
+    },
+    "down=true,east=true,north=true,south=false,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/093"
+    },
+    "down=true,east=true,north=true,south=false,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/094"
+    },
+    "down=true,east=true,north=true,south=false,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/095"
+    },
+    "down=true,east=true,north=true,south=false,up=true,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/096"
+    },
+    "down=true,east=true,north=true,south=true,up=false,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/097"
+    },
+    "down=true,east=true,north=true,south=true,up=false,west=true": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/098"
+    },
+    "down=true,east=true,north=true,south=true,up=true,west=false": {
+      "model": "block/lapisdemon/bonus/mushroomblocks/099"
+    }
+  }
+}
 }

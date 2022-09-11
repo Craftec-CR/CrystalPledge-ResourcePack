@@ -16,8 +16,6 @@ import java.util.zip.ZipOutputStream;
 
 public class ResourcePackBuilder {
     private static final String CRYSTAL_PLEDGE_ZIP = "CrystalPledge.zip";
-    private static final String VANILLA_TWEAKS = "VanillaTweaks.zip";
-    private static final String NEGATIVE_SPACE = "NegativeSpaceFont.zip";
     private static final String CONFIG = "config.json";
     private static final List<String> mainFiles = List.of("LICENSE.txt",
                                                           "pack.mcmeta",
@@ -91,7 +89,8 @@ public class ResourcePackBuilder {
             }
 
             System.out.println("Copying Vanilla Tweaks...");
-            try (ZipFile vanillaTweaks = new ZipFile(VANILLA_TWEAKS)) {
+            String vanillaTweaksPath = config.get("vanilla_tweaks").getAsString();
+            try (ZipFile vanillaTweaks = new ZipFile(vanillaTweaksPath)) {
                 for (Enumeration<? extends ZipEntry> enumeration = vanillaTweaks.entries(); enumeration.hasMoreElements(); ) {
                     ZipEntry entry = enumeration.nextElement();
                     String entryName = entry.getName();
@@ -101,11 +100,12 @@ public class ResourcePackBuilder {
                     }
                 }
             } catch (FileNotFoundException e) {
-                warn(WarningType.MISSING, VANILLA_TWEAKS, null);
+                warn(WarningType.MISSING, vanillaTweaksPath, null);
             }
 
             System.out.println("Copying Negative Space Font...");
-            try (ZipFile negativeSpaceFont = new ZipFile(NEGATIVE_SPACE)) {
+            String negativeSpacePath = config.get("negative_space").getAsString();
+            try (ZipFile negativeSpaceFont = new ZipFile(negativeSpacePath)) {
                 for (Enumeration<? extends ZipEntry> enumeration = negativeSpaceFont.entries(); enumeration.hasMoreElements(); ) {
                     ZipEntry entry = enumeration.nextElement();
                     if (entry.isDirectory()) { continue; }
@@ -121,7 +121,24 @@ public class ResourcePackBuilder {
                     }
                 }
             } catch (FileNotFoundException e) {
-                warn(WarningType.MISSING, NEGATIVE_SPACE, null);
+                warn(WarningType.MISSING, negativeSpacePath, null);
+            }
+
+            System.out.println("Copying BONUS Mushroom Blocks...");
+            String bonusPath = config.get("bonus_mushroom_blocks").getAsString();
+            try (ZipFile bonus = new ZipFile(bonusPath)) {
+                for (Enumeration<? extends ZipEntry> enumeration = bonus.entries(); enumeration.hasMoreElements(); ) {
+                    ZipEntry entry = enumeration.nextElement();
+                    String entryName = entry.getName();
+                    if (entry.isDirectory() || mainFiles.contains(entryName) || entryName.equals("changelog.txt")) {
+                        continue;
+                    }
+                    try (InputStream in = bonus.getInputStream(entry)) {
+                        copy(temp, Path.of(entryName), in);
+                    }
+                }
+            } catch (FileNotFoundException e) {
+                warn(WarningType.MISSING, bonusPath, null);
             }
 
             System.out.println("Copying assets...");
@@ -351,7 +368,9 @@ public class ResourcePackBuilder {
                 }
                 return;
             } else {
-                warn(WarningType.FILE, path.toString(), null);
+                if (!path.startsWith("assets\\minecraft\\textures\\block\\lapisdemon\\bonus\\mushroomblocks\\")) {
+                    warn(WarningType.FILE, path.toString(), null);
+                }
                 file.delete();
             }
         }

@@ -1,0 +1,31 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "crystalpledge:skill/trap_string",
+		"particle": "crystalpledge:skill/trap_string"
+	},
+	"elements": [
+		{
+			"from": [8, 7, 4],
+			"to": [8, 8, 12],
+			"faces": {
+				"east": {"uv": [0, 7.5, 8, 8.5], "texture": "#0"},
+				"west": {"uv": [0, 7.5, 8, 8.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.5, 7.5, 4],
+			"to": [8.5, 7.5, 12],
+			"faces": {
+				"up": {"uv": [0, 7.5, 8, 8.5], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [0, 7.5, 8, 8.5], "rotation": 90, "texture": "#missing"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -5.6, 0],
+			"scale": [1.6, 1.6, 1.6]
+		}
+	}
+}

@@ -3,6 +3,13 @@
     "parent": "block/jack_o_lantern",
     "overrides": [
         {"predicate":{"custom_model_data":1},"model":"crystalpledge:skill/shield"},
-        {"predicate":{"custom_model_data":2},"model":"crystalpledge:skill/crater"}
+        {"predicate":{"custom_model_data":2},"model":"crystalpledge:skill/crater"},
+        {"predicate":{"custom_model_data":3},"model":"crystalpledge:skill/trap_stake"},
+        {"predicate":{"custom_model_data":4},"model":"crystalpledge:skill/trap_string_1"},
+        {"predicate":{"custom_model_data":5},"model":"crystalpledge:skill/trap_string_2"},
+        {"predicate":{"custom_model_data":6},"model":"crystalpledge:skill/trap_string_4"},
+        {"predicate":{"custom_model_data":7},"model":"crystalpledge:skill/trap_string_8"},
+        {"predicate":{"custom_model_data":8},"model":"crystalpledge:skill/trap_string_16"},
+        {"predicate":{"custom_model_data":9},"model":"crystalpledge:skill/trap_string_32"}
     ]
 }

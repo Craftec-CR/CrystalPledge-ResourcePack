@@ -1,0 +1,6 @@
+{
+  "parent": "crystalpledge:item/hidden",
+  "textures": {
+    "layer0": "minecraft:item/arrow"
+  }
+}
